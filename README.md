@@ -32,4 +32,13 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 ## Nasazení
 
-Statický web bez buildu; kořen repozitáře je kořen webu. GitHub `edustack-is/is-edustack-prezentace`, Cloudflare Pages projekt `is-edustack-prezentace`. Po úpravách stačí `./deploy.sh "popis změny"`.
+Statický web bez buildu; kořen repozitáře je kořen webu. GitHub `edustack-is/is-edustack-prezentace`, Cloudflare Pages projekt `is-edustack-prezentace` na účtu petr@petrvich.work.
+
+Nasazuje GitHub Actions při každém pushi na `main` (`.github/workflows/deploy.yml`). Repozitář potřebuje tajné klíče `CLOUDFLARE_API_TOKEN` a `CLOUDFLARE_ACCOUNT_ID` (stejné jako u `edustack-is/edustack-is-sandbox`):
+
+```bash
+gh secret set CLOUDFLARE_ACCOUNT_ID -R edustack-is/is-edustack-prezentace
+gh secret set CLOUDFLARE_API_TOKEN -R edustack-is/is-edustack-prezentace
+```
+
+Po úpravách stačí `./deploy.sh "popis změny"`.
