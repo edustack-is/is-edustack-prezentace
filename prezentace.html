@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edu Stack IS – obhajoba bakalářské práce · Petr Vích</title>
+<meta name="description" content="Prezentace k obhajobě bakalářské práce Informační systém pro podporu výuky informatiky (Edu Stack IS).">
+<link rel="icon" href="assets/logo.png">
+<style>
+:root{--p:#6544AF;--pd:#3F2A78;--pk:#E24D8D;--bl:#7EC3E4;--or:#F28C28;--gr:#4CAF6A;--ink:#24203A;--mute:#6B6680;--tint:#F1EDFA;--lav:#C9BFE8;--w:#fff}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#1c1533;font-family:"Segoe UI",Calibri,system-ui,-apple-system,Roboto,sans-serif;color:var(--ink)}
+.deck{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.stage{width:min(100vw,calc(100vh*16/9));height:min(100vh,calc(100vw*9/16));position:relative;background:var(--w);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.slide{position:absolute;inset:0;padding:6% 6% 5%;display:none;font-size:calc(min(100vw,100vh*16/9)/62)}
+.slide.active{display:block}
+.slide.dark{background:var(--pd);color:#fff}
+h1{margin:0 0 .6em;font-size:2.1em;line-height:1.15;color:var(--pd);letter-spacing:-.01em}
+.dark h1{color:#fff}
+p{margin:0 0 .6em;line-height:1.4}
+.lead{font-size:1.05em}
+.muted{color:var(--mute)}
+.dark .muted{color:var(--lav)}
+.foot{position:absolute;left:6%;right:6%;bottom:2.5%;display:flex;justify-content:space-between;font-size:.62em;color:var(--mute)}
+.dark .foot{color:var(--lav)}
+.cols{display:grid;gap:1.2em}
+.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:1fr 1fr 1fr}.c4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--tint);border-radius:.6em;padding:1em 1.1em;line-height:1.4}
+.card h3{margin:0 0 .45em;font-size:1.05em;color:var(--pd)}
+.card.pink{background:#FBE3EE}.card.pink h3{color:#A7245F}
+.dark .card{background:#51398F;color:#E6E0F5}.dark .card h3{color:#fff}
+.card p{margin:0 0 .4em;font-size:.86em}
+ul{margin:0;padding-left:1.2em;line-height:1.45}li{margin-bottom:.45em}
+.stat{text-align:center}.stat b{display:block;font-size:2.9em;line-height:1.1;font-weight:800}.stat span{display:block;font-size:.8em;margin-top:.3em;line-height:1.3}
+.goal{display:grid;grid-template-columns:2.2em 1fr;gap:.9em;align-items:start;margin-bottom:1em}
+.goal .n{width:2.2em;height:2.2em;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.05em}
+.goal h3{margin:0 0 .2em;font-size:1.15em;color:var(--pd)}.goal p{margin:0;font-size:.92em}
+.rq{background:var(--tint);border-radius:.5em;padding:.7em 1em;font-size:.88em}
+.layer{display:grid;grid-template-columns:11em 1fr;gap:1.2em;align-items:center;margin-bottom:.9em}
+.layer .tag{color:#fff;border-radius:.5em;padding:.8em 1em;line-height:1.2}.layer .tag b{display:block;font-size:1.05em}.layer .tag small{font-size:.78em}
+.layer p{margin:0;font-size:.95em}
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:.8em;align-items:end;margin-top:1.4em}
+.step{color:#fff;border-radius:.5em;padding:.8em 1em;line-height:1.3}.step b{display:block;margin-bottom:.35em}.step p{margin:0;font-size:.8em}
+.step.s1{background:#B8B0D6;min-height:5em}.step.s2{background:#8F7BCB;min-height:7.5em}.step.s3{background:var(--p);min-height:10em}
+.lbl{font-size:.75em;color:var(--mute);font-style:italic;margin-bottom:.35em;display:block}
+.arch{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto .7fr;gap:.6em;align-items:center}
+.box{color:#fff;border-radius:.5em;padding:.8em .6em;text-align:center;line-height:1.25}.box b{display:block;font-size:.95em}.box small{font-size:.72em;opacity:.95}
+.arr{color:var(--lav);font-size:1.6em;text-align:center}
+.arch2{display:grid;grid-template-columns:1fr 1fr auto .7fr;gap:.6em;align-items:center;margin-top:.9em}
+.arch2 .note{grid-column:1;font-size:.85em}
+.domgrid{display:grid;grid-template-columns:1fr 1fr;gap:.5em}
+.dom{background:var(--tint);border-radius:.4em;padding:.5em .7em;font-size:.72em;line-height:1.25}.dom b{display:block;color:var(--pd);font-size:1.05em}
+.roles{font-size:.86em;line-height:1.5}.roles b{color:var(--pd)}
+.title-slide{grid-template-columns:36% 1fr;padding:0}
+.slide.title-slide.active{display:grid}
+.title-slide .left{background:#fff;display:flex;align-items:center;justify-content:center;padding:8%}
+.title-slide .left img{width:100%;max-width:18em}
+.title-slide .right{background:var(--pd);color:#fff;padding:9% 8%;display:flex;flex-direction:column;justify-content:center}
+.title-slide h1{color:#fff;font-size:2.1em}
+.title-slide .sub{color:var(--lav);font-size:1.05em;margin-bottom:2.2em}
+.title-slide .meta{font-size:.82em;line-height:1.6}
+.thanks{background:var(--pd);color:#fff;border-radius:.5em;padding:1em 1.2em;font-size:.95em;margin-top:1.2em;line-height:1.4}
+.end{display:grid;grid-template-columns:1fr 14em;gap:2em;align-items:start}.end img{width:100%}
+#hud{position:fixed;left:0;right:0;bottom:0;height:4px;background:rgba(255,255,255,.12)}
+#bar{height:100%;background:var(--pk);width:0;transition:width .25s}
+#notes{position:fixed;right:1rem;bottom:1.2rem;width:min(30rem,90vw);max-height:40vh;overflow:auto;background:#fff;color:var(--ink);border-radius:.6rem;padding:1rem 1.2rem;font-size:.95rem;line-height:1.45;box-shadow:0 10px 30px rgba(0,0,0,.4);display:none}
+#notes.show{display:block}
+#help{position:fixed;left:1rem;bottom:1.2rem;color:rgba(255,255,255,.55);font-size:.75rem}
+@media (prefers-reduced-motion:no-preference){.slide.active{animation:in .25s ease}}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@media print{html,body{background:#fff}.deck{position:static}.stage{width:100%;height:auto;box-shadow:none}.slide{position:relative;display:block;height:100vh;page-break-after:always;font-size:1.4vw}#hud,#notes,#help{display:none}}
+</style>
+</head>
+<body>
+<div class="deck"><div class="stage">
+
+<section class="slide title-slide">
+  <div class="left"><img src="assets/logo.png" alt="Logo Edu Stack IS"></div>
+  <div class="right">
+    <h1>Informační systém pro podporu výuky informatiky</h1>
+    <div class="sub">Edu Stack IS – edukační sandbox, ve kterém se žák stává správcem školy</div>
+    <div class="meta"><b>Petr Vích</b><br>Obhajoba bakalářské práce · B IT<br>Vedoucí: PhDr. Jakub Mazuch · Oponent: PhDr. Martin Beneš, Ph.D.<br>KITTV, Pedagogická fakulta UK · září 2026</div>
+  </div>
+  <div class="notes">Dobrý den, jmenuji se Petr Vích a představím svou bakalářskou práci Informační systém pro podporu výuky informatiky. Výsledkem je Edu Stack IS – edukační informační systém, ve kterém žák není jen uživatel, ale správce fiktivní školy. Prezentace má 10 minut: východiska, cíle, tři didaktické principy, krátce architektura, ověření ve výuce a limity.</div>
+</section>
+
+<section class="slide">
+  <h1>Myšlenka není nová – chyběla ale realizace</h1>
+  <div class="cols c2">
+    <div class="card"><h3>Literatura: školní IS jako téma výuky (2007)</h3><p>Dostál (2007) popisuje školní informační systémy jako integrovanou agendu školy – matriku, klasifikaci, rozvrh, komunikaci.</p><p>V této linii chybí nástroj, do kterého by měl žák plný přístup a mohl v něm sám spravovat data, role a oprávnění. Přesně tuto mezeru práce vyplňuje.</p></div>
+    <div class="card"><h3>Vzor, ne konkurence: Bakaláři, EduPage…</h3><p>Komerční školní IS beru jako referenční rámec funkcí, nikoli jako srovnávací cíl.</p><p>Důvod je didaktický: žáci školu důvěrně znají – mají rozvrh, známky, omluvenky. Nemusím vysvětlovat doménu, mohu rovnou ukazovat, jak IS uvnitř funguje.</p></div>
+  </div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>2</span></div>
+  <div class="notes">Východisko 1: téma školního IS ve výuce najdeme v literatuře už v roce 2007 (Dostál) – není to nový nápad, ale v české praxi chyběl nástroj, kde má žák plný přístup. Východisko 2: komerční školní systémy jsem si vzal jako VZOR, ne jako konkurenci. Žáci – i ti mladší – vědí, jak škola funguje, takže IS mohu vysvětlovat na známém příkladu.</div>
+</section>
+
+<section class="slide">
+  <h1>Cíle práce</h1>
+  <div class="goal"><div class="n" style="background:var(--p)">1</div><div><h3>Vymezit kategorii</h3><p>Odlišit edukační IS od komerčních provozních systémů i od obecných výukových platforem (analýza podle 4 kritérií).</p></div></div>
+  <div class="goal"><div class="n" style="background:var(--pk)">2</div><div><h3>Navrhnout prototyp</h3><p>Doménově věrný škole, otevřený, bezpečně resetovatelný, přístupný ve třech vrstvách hloubky; doplnit pracovní listy.</p></div></div>
+  <div class="goal"><div class="n" style="background:var(--or)">3</div><div><h3>Ověřit ve výuce</h3><p>Zjistit, zda navržené úlohy vedou k pochopení rolí, oprávnění a datových toků.</p></div></div>
+  <div class="rq"><b style="color:var(--pd)">Výzkumná otázka:</b> Lze řízenou simulací správy školy přivést žáka od pasivního používání IS k porozumění jeho rolím, oprávněním a datovým tokům?</div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>3</span></div>
+  <div class="notes">Tři dílčí cíle: vymezit kategorii edukačních IS; navrhnout prototyp naplňující tuto kategorii včetně pracovních listů; ověřit ho ve výuce. Výzkumná otázka: lze simulací správy školy dovést žáka od používání k porozumění rolím, oprávněním a datovým tokům.</div>
+</section>
+
+<section class="slide">
+  <h1>Software je pomůcka, těžiště je didaktické</h1>
+  <p class="lead">Hlavní text práce je pedagogický: role, procesy, úrovně, úlohy. Technologie jsou vyčleněny do příloh (uživatelská příručka A, technická příloha B).</p>
+  <div class="ladder">
+    <div><span class="lbl">Komerční ŠIS</span><div class="step s1"><b>zapamatovat / porozumět</b><p>žák čte známku, kterou eviduje někdo jiný</p></div></div>
+    <div><span class="lbl">&nbsp;</span><div class="step s2"><b>aplikovat / analyzovat</b><p>žák zakládá třídu, řeší kolizi v rozvrhu</p></div></div>
+    <div><span class="lbl">Edu Stack IS</span><div class="step s3"><b>hodnotit / tvořit</b><p>žák navrhuje modul, čte ER diagram, volá API</p></div></div>
+  </div>
+  <p style="margin-top:1em;color:var(--pd);font-weight:700;font-size:.9em">Posun po Bloomově taxonomii: od uživatele k modeláři a správci</p>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>4</span></div>
+  <div class="notes">Nejde o technickou práci. Software je pomůcka; hlavní text je didaktický a technika je v přílohách. Pedagogické jádro: posun po Bloomově taxonomii. V komerčním systému žák jen čte. V Edu Stack IS aplikuje a analyzuje (založí třídu, řeší kolizi) a na SŠ hodnotí a tvoří (navrhne modul, čte ER diagram).</div>
+</section>
+
+<section class="slide">
+  <h1>Chyba je přirozená – když se s ní pracuje, učí</h1>
+  <div class="cols c3">
+    <div class="card"><h3>Jen fiktivní data</h3><p>Žádné reálné osoby, žádné GDPR riziko. Cvičnou školu vygeneruje učitel jedním klikem (tisíce záznamů).</p></div>
+    <div class="card"><h3>Reset kdykoli</h3><p>Každá třída má vlastní izolovanou instanci (multitenance). Po hodině se vrátí do výchozího stavu – beze stopy.</p></div>
+    <div class="card pink"><h3>„Zkus to rozbít“</h3><p>Omylem smazaný žák nebo záměrně vyvolaná kolize v rozvrhu je materiál k diskusi, ne provozní problém. Bezpečný reset dělá z chyby úlohu.</p></div>
+  </div>
+  <p style="margin-top:1.4em;font-style:italic;color:var(--pd);font-size:.9em">Sandbox je podmínka experimentu: bez něj nelze žáka vyzvat, ať systém záměrně „rozbije“ – a právě to nejlépe odhaluje, jak funguje.</p>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>5</span></div>
+  <div class="notes">Druhý princip: práce s chybou. Jen fiktivní data, která lze kdykoli přegenerovat; každá třída má vlastní instanci s resetem. Když žák něco omylem smaže – nebo schválně v rámci úkolu – nic se neděje; naopak: proč to šlo smazat? kdo to mohl? co se ztratilo? V pilotáži se to potvrdilo – záměrná kolize v rozvrhu byla tématem diskuse.</div>
+</section>
+
+<section class="slide">
+  <h1>Jeden systém pro všechny – mění se jen kompetence</h1>
+  <div class="layer"><div class="tag" style="background:var(--bl)"><b>1. stupeň ZŠ</b><small>Uživatelská vrstva</small></div><p>Role jako pohled: přihlásím se jako žák, učitel, ředitel – co vidím a co smím? Zápis jedné známky, diskuse o odpovědnosti.</p></div>
+  <div class="layer"><div class="tag" style="background:var(--p)"><b>2. stupeň ZŠ</b><small>Konfigurační vrstva</small></div><p>Struktura jako řemeslo: založení třídy, předmětu, rozvrh s detekcí kolizí, AI asistent, otázka impersonace.</p></div>
+  <div class="layer"><div class="tag" style="background:var(--pk)"><b>Střední škola</b><small>Vývojářská vrstva</small></div><p>Systém jako platforma: ER diagram, REST a MCP API, vlastní skript, návrh nového modulu, šifrování a anonymizace.</p></div>
+  <p class="muted" style="font-size:.78em">Spirálové kurikulum: tatáž známka nebo rozvrh se vrací v každém stupni na vyšší úrovni abstrakce. Žák, který dnes klikne na známku, ji za pár let přečte ze svého skriptu – a pozná, že je to tatáž věc.</p>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>6</span></div>
+  <div class="notes">Třetí princip: jeden plnohodnotný systém se třemi vrstvami hloubky. 1. stupeň pozoruje – role jako pohled. 2. stupeň spravuje strukturu. SŠ jde pod kapotu – ER diagram, API, vlastní modul. Mění se kompetence žáka v čase, systém zůstává. Podle stupňů existují tři pracovní listy s klíčem pro učitele.</div>
+</section>
+
+<section class="slide">
+  <h1>Co žák v systému potká: role a datové domény</h1>
+  <div class="cols c2">
+    <div><h3 style="color:var(--pd);margin:0 0 .5em;font-size:1.05em">Šest rolí – každá je vzdělávací příležitost</h3>
+      <ul class="roles"><li><b>Systémový administrátor</b> – provoz pro více škol, tajné klíče</li><li><b>Ředitel</b> – pohled shora, bílá kniha</li><li><b>Zástupce ředitele</b> – rozvrh, suplování, kolize</li><li><b>Učitel</b> – známky, třídní kniha – odpovědnost za data</li><li><b>Rodič</b> – co a komu systém ukazuje</li><li><b>Žák</b> – RBAC „zdola“</li></ul></div>
+    <div><h3 style="color:var(--pd);margin:0 0 .5em;font-size:1.05em">Osm datových domén – každá má svou otázku</h3>
+      <div class="domgrid">
+        <div class="dom"><b>Identita</b>Jak systém ví, kdo jsem?</div><div class="dom"><b>Akademická struktura</b>Jak je škola organizována v čase?</div>
+        <div class="dom"><b>Úvazky a prostory</b>Kdo a kde učí?</div><div class="dom"><b>Rozvrh a třídní kniha</b>Co se děje v hodině?</div>
+        <div class="dom"><b>Docházka a klasifikace</b>Jak měříme výsledky?</div><div class="dom"><b>Plánování a materiály</b>Jak učitel plánuje?</div>
+        <div class="dom"><b>Komunikace</b>Jak škola propojuje lidi?</div><div class="dom"><b>Systém a AI</b>Co běží na pozadí?</div>
+      </div></div>
+  </div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>7</span></div>
+  <div class="notes">Šest rolí, každá učí něco jiného. Databáze má přes 40 tabulek; didakticky rozdělena do 8 domén, z nichž každá odpovídá jedné výukové otázce – učitel postupuje doménu po doméně. Klíčové: vazby jsou viditelné – nový předmět se promítne do rozvrhu, klasifikace i úvazku.</div>
+</section>
+
+<section class="slide">
+  <h1>Jak je systém postavený (stručně)</h1>
+  <div class="arch">
+    <div class="box" style="background:var(--bl)"><b>Prohlížeč</b><small>žák · učitel · rodič</small></div><div class="arr">➜</div>
+    <div class="box" style="background:var(--p)"><b>Frontend</b><small>React + Vite · Tailwind<br>Cloudflare Pages</small></div><div class="arr">➜</div>
+    <div class="box" style="background:var(--pd)"><b>Backend REST API</b><small>NestJS · TypeScript<br>RBAC guard · audit</small></div><div class="arr">➜</div>
+    <div class="box" style="background:#8F7BCB"><b>SQLite</b><small>čisté SQL<br>better-sqlite3</small></div>
+  </div>
+  <div class="arch2">
+    <p class="note">Vrstva AI je záměrně mimo jádro – žák vidí, že AI je oddělená služba s vymezenými oprávněními, ne kouzelná část databáze.</p>
+    <div class="box" style="background:var(--pk)"><b>MCP server</b><small>nástroje pro AI agenty<br>SSE · jen loopback</small></div><div class="arr">➜</div>
+    <div class="box" style="background:var(--or)"><b>LLM</b><small>Gemini, OpenAI</small></div>
+  </div>
+  <ul class="muted" style="font-size:.78em;margin-top:1em"><li>Monorepo: backend, frontend i MCP na jednom místě – čitelné pro SŠ</li><li>Multitenance: jedna instance, libovolně škol, izolovaná data</li><li>Cloud (Fly.io + Cloudflare) i lokální běh bez internetu</li><li>Hesla Argon2, citlivé sloupce šifrované, SSO Google/GitHub/Microsoft</li></ul>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>8</span></div>
+  <div class="notes">Jen rychle, detaily do dotazů. React frontend, NestJS backend s REST API, RBAC guardem a auditem, SQLite s čistým SQL (better-sqlite3). AI je oddělená vrstva – MCP server vystavuje nástroje jazykovým modelům, běží jen na loopbacku. Monorepo je čitelné pro středoškoláky, multitenance dává každé třídě vlastní školu, vše lze spustit lokálně bez internetu.</div>
+</section>
+
+<section class="slide">
+  <h1>Ověření ve výuce: 9. třída, 16 žáků, jedna hodina</h1>
+  <p class="muted" style="font-size:.85em">Role zástupce ředitele a učitel · tři pracovní listy (matrika, rozvrh, AI asistent) · dotazník + řízená diskuse</p>
+  <div class="cols c4" style="margin:1em 0 1.4em">
+    <div class="stat"><b style="color:var(--p)">15 / 16</b><span>vysvětlilo (aspoň částečně), proč žák nevidí stejná data jako učitel</span></div>
+    <div class="stat"><b style="color:var(--pk)">14 / 16</b><span>chce v systému pracovat i v dalších hodinách</span></div>
+    <div class="stat"><b style="color:var(--or)">9,5</b><span>medián hodnocení vzhledu (škála 1–10)</span></div>
+    <div class="stat"><b style="color:var(--gr)">9,0</b><span>medián snadnosti ovládání (škála 1–10)</span></div>
+  </div>
+  <div class="cols c2">
+    <div class="card"><h3>Co žáky bavilo</h3><p>Známky (8 zmínek) a AI asistent (6) – „učesání“ slovního hodnocení bylo nejatraktivnější a zároveň otevřelo češtinu i etiku.</p></div>
+    <div class="card"><h3>Co se ukázalo</h3><p>13 žáků se přihlásilo hned; žádný pád systému; dva věcné podněty (editace hodnocení, signalizace čekání na AI); jedna protestní odpověď v datech ponechána.</p></div>
+  </div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>9</span></div>
+  <div class="notes">Jedna hodina, 16 žáků 9. třídy, role zástupce ředitele a učitel, tři pracovní listy. Klíčové číslo: 15 z 16 aspoň částečně vysvětlilo, proč každá role vidí jiná data – RBAC pochopili prožitkem. 14 z 16 by chtělo pokračovat. Vzhled 9,5, snadnost 9,0. Technicky: 13 přihlášení hned, žádný pád, dva věcné podněty.</div>
+</section>
+
+<section class="slide dark">
+  <h1>Zkušenost z hodiny – pohled začínajícího učitele</h1>
+  <p class="muted lead">Mentoroval jsem dospělé, roky vedl oddíl ve skautu – ale hodina s deváťáky byla moje první výuka dětí ve škole.</p>
+  <div class="cols c2" style="margin-top:.6em">
+    <div class="card"><h3>Systém plní, k čemu byl navržen</h3><p>Žáci se přihlásili, pracovali s matrikou, známkami i AI a v diskusi vysvětlili oprávnění.</p></div>
+    <div class="card"><h3>Jedna hodina nestačí na plný potenciál</h3><p>Třída na tento styl práce není zvyklá; víc času zabralo vysvětlování než samotné úlohy.</p></div>
+    <div class="card"><h3>Žáci se báli klikat</h3><p>Obava „abych něco nezkazil“ všechno protahovala – přesně to, co má sandbox odbourat. Chce to čas a opakování.</p></div>
+    <div class="card"><h3>Poučení pro metodiku</h3><p>Začít kratší úvodní hodinou o principu sandboxu, úlohy 2. listu (rozvrh) přesunout do další hodiny.</p></div>
+  </div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>10</span></div>
+  <div class="notes">Osobní část. S výukou dětí jsem neměl zkušenost. Systém plní, k čemu byl navržen. Ale za jednu hodinu se plný potenciál využít nedá: třída nebyla zvyklá na tento styl, vysvětlování zabralo víc času než úlohy. Žáci se báli klikat, aby něco nezkazili – paradox: sandbox je tu proto, aby se bát nemuseli, ale tu jistotu si musí nejdřív odžít. Poučení: úvodní hodina o principu „nic nezkazíš“ a rozdělení úloh do více hodin.</div>
+</section>
+
+<section class="slide">
+  <h1>Limity práce a reakce na posudky</h1>
+  <div class="cols c2">
+    <div class="card"><h3>Ověření jen na 2. stupni ZŠ</h3><p>SŠ a 1. stupeň zůstaly neověřeny. Návrh: SŠ pilotáž se 3. listem na odborné škole (ER diagram, API), 1. stupeň zkrácený list „role jako pohled“; přesný popis vzorku a podmínek.</p></div>
+    <div class="card"><h3>Kurikulární analýza a rešerše</h3><p>Práce staví hlavně na RVP ZV; RVP G a SOV nejsou rozebrány samostatně a mapování materiálů má typologický charakter. Beru jako podnět pro rozšíření.</p></div>
+    <div class="card"><h3>Dotazník „standardizovaný“</h3><p>Přesnější je vlastní strukturovaný dotazník; pedagogický dotazník byl připraven, jeho výsledky nejsou v práci prezentovány.</p></div>
+    <div class="card"><h3>Rozpor v popisu MCP</h3><p>Autorizace je vynucována v backendu: každý MCP nástroj volá REST API s oprávněními uživatele dané AI relace; samotná MCP vrstva guard neobsahuje. Formulaci v klíči listu je třeba sjednotit.</p></div>
+  </div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>11</span></div>
+  <div class="notes">Otevřeně k limitům. (1) Ověření jen na 2. stupni; SŠ pilotáž na odborné škole s 3. listem, přesný popis vzorku. (2) Kurikulární analýza – hlavně RVP ZV, gymnaziální a odborné kurikulum si zaslouží samostatné zpracování. (3) Dotazník – správně „vlastní strukturovaný“. (4) MCP: autorizaci vynucuje backend – MCP nástroj volá REST API s oprávněními uživatele dané relace, MCP vrstva sama guard nemá.</div>
+</section>
+
+<section class="slide">
+  <h1>Závěr</h1>
+  <div class="end">
+    <ul style="font-size:.95em"><li>Vymezena nová kategorie: edukační IS – doménově věrný, otevřený, sandboxový, vícevrstvý</li><li>Funkční prototyp Edu Stack IS + tři pracovní listy s klíčem pro učitele + dotazníky</li><li>Pilotáž potvrdila: prožitek role vede k pochopení oprávnění; simulace je srozumitelná a motivační</li><li>Další rozvoj: pilotáže na SŠ a 1. stupni, více škol, listy k bezpečnosti a GDPR, mobilní rozhraní, komunita učitelů</li></ul>
+    <img src="assets/logo.png" alt="">
+  </div>
+  <div class="thanks">Děkuji za pozornost. Informační systém nemusí být ve škole jen administrativní nutnost – může být pomůckou, na které si žák digitální svět sám postaví.</div>
+  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích</span><span>12</span></div>
+  <div class="notes">Shrnutí: vymezil jsem kategorii edukačních IS, postavil prototyp s metodikou a ověřil ho ve výuce; pilotáž potvrdila hlavní hypotézu. Další rozvoj: SŠ a 1. stupeň, více škol. Děkuji za pozornost, rád odpovím na otázky.</div>
+</section>
+
+</div></div>
+<div id="hud"><div id="bar"></div></div>
+<div id="notes" aria-live="polite"></div>
+<div id="help">← → mezerník: listování · N: poznámky · F: celá obrazovka · 1–9: skok</div>
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')], notes=document.getElementById('notes'), bar=document.getElementById('bar');
+  let i=Math.max(0,Math.min(slides.length-1,(parseInt(location.hash.slice(1))||1)-1));
+  function show(n){i=(n+slides.length)%slides.length;slides.forEach((s,k)=>s.classList.toggle('active',k===i));location.hash=i+1;bar.style.width=((i+1)/slides.length*100)+'%';const nt=slides[i].querySelector('.notes');notes.textContent=nt?nt.textContent:'';}
+  document.querySelectorAll('.notes').forEach(n=>n.style.display='none');
+  addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();show(i+1)}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1)}else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1);else if(e.key.toLowerCase()==='n')notes.classList.toggle('show');else if(e.key.toLowerCase()==='f'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}else if(/^[1-9]$/.test(e.key))show(parseInt(e.key)-1);});
+  document.querySelector('.stage').addEventListener('click',e=>{show(e.clientX>innerWidth/2?i+1:i-1)});
+  addEventListener('hashchange',()=>{const h=parseInt(location.hash.slice(1))-1;if(!isNaN(h)&&h!==i)show(h)});
+  show(i);
+})();
+</script>
+</body>
+</html>
