@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Osnova prezentace – Edu Stack IS</title>
+<link rel="icon" href="../assets/logo.png">
+<style>
+:root{--p:#6544AF;--pd:#3F2A78;--pk:#E24D8D;--bl:#7EC3E4;--or:#F28C28;--gr:#4CAF6A;--ink:#24203A;--mute:#6B6680;--tint:#F1EDFA;--lav:#C9BFE8;--bg:#1c1533}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Calibri,system-ui,-apple-system,Roboto,sans-serif;line-height:1.45}
+.wrap{max-width:62rem;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--lav);font-size:.9rem;margin-bottom:1.4rem}
+.top a{color:#fff;text-decoration:none;background:rgba(255,255,255,.1);padding:.4rem .8rem;border-radius:.4rem}
+.paper{background:#fff;border-radius:.9rem;padding:2rem 2.2rem;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+h1{margin:0 0 .2rem;color:var(--pd);font-size:1.6rem}
+.sub{margin:0 0 1.4rem;color:var(--mute)}
+h2{color:var(--pd);font-size:1.15rem;margin:1.8rem 0 .6rem;padding-bottom:.25rem;border-bottom:2px solid var(--p)}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{padding:.5rem .6rem;vertical-align:top;border-bottom:1px solid #DDD8EA;text-align:left}
+th{background:var(--tint);color:var(--pd);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+td.n{font-weight:800;color:var(--p);text-align:center;width:2rem}
+td.t{white-space:nowrap;color:var(--mute);font-variant-numeric:tabular-nums}
+tr.core td{background:#FBFAFE}
+tr.extra td{color:var(--mute)}
+td a{color:var(--pd)}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:.4rem;margin:1rem 0;font-size:.82rem}
+.timeline div{border-radius:.4rem;padding:.55rem .7rem;color:#fff;line-height:1.3}
+.timeline b{display:block;font-size:.9rem;color:#fff}
+ol{padding-left:1.3rem}li{margin-bottom:.4rem}
+b{color:var(--pd)}
+.note{background:var(--tint);border-radius:.5rem;padding:.7rem 1rem;font-size:.92rem;margin-top:1rem}
+@media (max-width:40rem){.paper{padding:1.2rem 1rem}td.t{white-space:normal}}
+@media print{html,body{background:#fff}.top{display:none}.paper{box-shadow:none;padding:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><span>Edu Stack IS · obhajoba bakalářské práce · Petr Vích</span><span><a href="../index.html">← Rozcestník</a> <a href="../prezentace.html">Prezentace ▶</a></span></div>
+<div class="paper">
+<h1>Osnova prezentace k obhajobě</h1>
+<p class="sub">10 minut · 11 slidů + 1 doplňující · klik na název slidu ho otevře ve webové prezentaci</p>
+
+<table>
+<tr><th>#</th><th>Slide</th><th>Čas</th><th>Cíl slidu</th></tr>
+<tr><td class="n">1</td><td><a href="../prezentace.html#1">Titulní</a></td><td class="t">0:00–0:30</td><td>Představit se, jednou větou říct, co Edu Stack IS je.</td></tr>
+<tr><td class="n">2</td><td><a href="../prezentace.html#2">Myšlenka není nová – chyběla realizace</a></td><td class="t">0:30–1:30</td><td>Dostál 2007 jako doklad, že téma existuje; školní IS (Bakaláři, EduPage) jako <b>vzor, ne konkurence</b> – žáci školu znají.</td></tr>
+<tr><td class="n">3</td><td><a href="../prezentace.html#3">Cíle práce</a></td><td class="t">1:30–2:15</td><td>Tři cíle + výzkumná otázka.</td></tr>
+<tr class="core"><td class="n">4</td><td><a href="../prezentace.html#4">Software je pomůcka, těžiště je didaktické</a></td><td class="t">2:15–3:15</td><td><b>Není to technická práce.</b> Bloomova taxonomie: od čtení známky k tvorbě modulu.</td></tr>
+<tr class="core"><td class="n">5</td><td><a href="../prezentace.html#5">Chyba je přirozená</a></td><td class="t">3:15–4:15</td><td>Fiktivní data, reset, „zkus to rozbít“. Chyba jako úloha, ne riziko.</td></tr>
+<tr class="core"><td class="n">6</td><td><a href="../prezentace.html#6">Jeden systém pro všechny</a></td><td class="t">4:15–5:15</td><td>Tři vrstvy hloubky podle stupně; mění se jen kompetence žáka v čase.</td></tr>
+<tr><td class="n">7</td><td><a href="../prezentace.html#7">Role a datové domény</a></td><td class="t">5:15–6:00</td><td>Rychlý průlet: 6 rolí, 8 domén, viditelné vazby.</td></tr>
+<tr><td class="n">8</td><td><a href="../prezentace.html#8">Jak je systém postavený</a></td><td class="t">6:00–6:45</td><td>Architektura v jednom obrázku, <b>bez detailů</b> – detaily do dotazů.</td></tr>
+<tr><td class="n">9</td><td><a href="../prezentace.html#9">Ověření ve výuce</a></td><td class="t">6:45–7:45</td><td>Čísla z pilotáže: 15/16 RBAC, 14/16 chce dál, mediány 9,5 a 9,0.</td></tr>
+<tr><td class="n">10</td><td><a href="../prezentace.html#10">Zkušenost z hodiny</a></td><td class="t">7:45–8:45</td><td>Osobní reflexe: první výuka dětí, strach klikat, jedna hodina nestačí.</td></tr>
+<tr><td class="n">11</td><td><a href="../prezentace.html#11">Závěr</a></td><td class="t">8:45–9:30</td><td>Shrnutí, další rozvoj, otevřený kód na GitHubu a web is-edustack.org, poděkování. Rezerva 30 s.</td></tr>
+<tr class="extra"><td class="n">12</td><td><a href="../prezentace.html#12">Limity a reakce na posudky</a></td><td class="t"><i>doplňující</i></td><td>V hlavním bloku se neukazuje. Promítnout až při reakci na posudky nebo v diskusi, bude-li to relevantní: SŠ neověřeno, kurikulum, dotazník, MCP rozpor.</td></tr>
+</table>
+
+<div class="timeline">
+  <div style="background:#3F2A78"><b>0–2 min · 1–3</b>kdo jsem, odkud myšlenka, cíle</div>
+  <div style="background:#E24D8D"><b>2–5 min · 4–6</b>tři principy – srdce práce</div>
+  <div style="background:#7EC3E4"><b>5–7 min · 7–8</b>co a jak – svižně</div>
+  <div style="background:#4CAF6A"><b>7–8:45 · 9–10</b>ověření, zkušenost</div>
+  <div style="background:#F28C28"><b>8:45–9:30 · 11</b>závěr, pointa · 12 v záloze</div>
+</div>
+
+<h2>Dramaturgie</h2>
+<ol>
+  <li><b>Otevření problémem</b> (slide 2): téma známé od 2007, ale chybí nástroj → proto tato práce.</li>
+  <li><b>Tři principy = jádro práce</b> (slidy 4–6): didaktika, chyba, jeden systém. Tady je nejvíc času a energie.</li>
+  <li><b>Co a jak</b> (slidy 7–8): rychle, věcně, bez ponoření do techniky.</li>
+  <li><b>Důkaz</b> (slide 9) → <b>upřímná reflexe</b> (slide 10).</li>
+  <li><b>Zavřít pointou</b> (slide 11): IS jako pomůcka, na které si žák digitální svět sám postaví; kód je otevřený, web is-edustack.org.</li>
+  <li><b>Limity</b> (slide 12) zůstávají v záloze: při reakci na posudky je pojmenovat jako první („ano, to platí, udělal bych X“) a slide promítnout jen tehdy, když to diskusi pomůže.</li>
+</ol>
+<div class="note"><b>Kontrolní bod:</b> pokud jste na slidu 6 déle než v 5:30, zkraťte slidy 7 a 8 na dvě věty každý. Technika (slide 8) je nejkratší část.</div>
+</div>
+</div>
+</body>
+</html>

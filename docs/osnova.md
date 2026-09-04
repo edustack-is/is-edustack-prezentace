@@ -1,4 +1,4 @@
-# Osnova prezentace k obhajobě (10 minut, 12 slidů)
+# Osnova prezentace k obhajobě (10 minut, 11 slidů + 1 doplňující)
 
 | # | Slide | Čas | Cíl slidu |
 |---|-------|-----|-----------|
@@ -12,13 +12,14 @@
 | 8 | Jak je systém postavený | 6:00–6:45 | Architektura v jednom obrázku, **bez detailů** – detaily do dotazů. |
 | 9 | Ověření ve výuce | 6:45–7:45 | Čísla z pilotáže: 15/16 RBAC, 14/16 chce dál, mediány 9,5 a 9,0. |
 | 10 | Zkušenost z hodiny | 7:45–8:45 | Osobní reflexe: první výuka dětí, strach klikat, jedna hodina nestačí. |
-| 11 | Limity a reakce na posudky | 8:45–9:40 | Proaktivně: SŠ neověřeno, kurikulum, dotazník, MCP rozpor. |
-| 12 | Závěr | 9:40–10:00 | Shrnutí, další rozvoj, poděkování. |
+| 11 | Závěr | 8:45–9:30 | Shrnutí, další rozvoj, otevřený kód na GitHubu + web is-edustack.org, poděkování. |
+| 12 | Limity a reakce na posudky | *doplňující* | Neprezentuje se v hlavním bloku. Ukázat až při reakci na posudky nebo v diskusi, pokud bude relevantní: SŠ neověřeno, kurikulum, dotazník, MCP rozpor. |
 
 ## Dramaturgie
 
 1. **Otevření problémem** (slide 2): téma známé od 2007, ale chybí nástroj → proto tato práce.
 2. **Tři principy = jádro práce** (slidy 4–6): didaktika, chyba, jeden systém. Tady je nejvíc času a energie.
 3. **Co a jak** (slidy 7–8): rychle, věcně, bez ponoření do techniky.
-4. **Důkaz** (slide 9) → **upřímná reflexe** (slide 10) → **limity dřív, než je řekne komise** (slide 11).
-5. **Zavřít pointou** (slide 12): IS jako pomůcka, na které si žák digitální svět sám postaví.
+4. **Důkaz** (slide 9) → **upřímná reflexe** (slide 10).
+5. **Zavřít pointou** (slide 11): IS jako pomůcka, na které si žák digitální svět sám postaví; kód je otevřený, web is-edustack.org.
+6. **Limity** (slide 12) zůstávají v záloze: pojmenovat je při reakci na posudky – „ano, to platí, udělal bych X“ – a slide ukázat jen tehdy, když to diskusi pomůže.

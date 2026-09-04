@@ -9,7 +9,7 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 **Kdo jsem a co jsem udělal.**
 - „Petr Vích, Informační systém pro podporu výuky informatiky.“
 - Jedna věta: *Edu Stack IS – edukační sandbox, kde žák není uživatel, ale správce fiktivní školy.*
-- Struktura: východiska → cíle → tři principy → krátce technika → ověření → limity.
+- Struktura: východiska → cíle → tři principy → krátce technika → ověření → zkušenost → závěr.
 
 → „Začnu tím, odkud ta myšlenka pochází.“
 
@@ -95,21 +95,22 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 - Žáci se **báli klikat**, aby něco nezkazili → paradox: sandbox je tu proto, aby se nebáli, ale jistotu si musí odžít.
 - Poučení: krátká úvodní hodina „nic nezkazíš“; rozvrh (2. list) do další hodiny.
 
-→ „Z toho plynou i limity, které chci pojmenovat sám.“
+→ „Shrnu.“
 
-## 11 · Limity a posudky (55 s)
+## 11 · Závěr (45 s)
+- Nová kategorie: edukační IS. Prototyp + 3 listy + dotazníky. Pilotáž potvrdila hypotézu.
+- Další rozvoj: SŠ, 1. stupeň, více škol, listy k bezpečnosti/GDPR, PWA, komunita učitelů.
+- Kód je otevřený na GitHubu (github.com/edustack-is), doprovodný web is-edustack.org s dokumentací pro učitele.
+- „IS nemusí být administrativní nutnost – může být pomůcka, na které si žák digitální svět sám postaví. Děkuji.“
+
+## 12 · Limity a posudky (doplňující – při reakci na posudky)
 **Říct to dřív, než se komise zeptá.**
 - Ověření jen 2. stupeň → návrh: SŠ pilotáž na odborné škole (3. list: ER, API); 1. stupeň zkrácený list; přesný popis vzorku, ročníku, podmínek.
 - Kurikulum: stavím na RVP ZV; RVP G a SOV zaslouží samostatnou analýzu; mapování materiálů je typologické.
 - Dotazník: správně „vlastní strukturovaný“, ne „standardizovaný“. Pedagogický dotazník připraven, výsledky nejsou prezentovány.
 - MCP rozpor: autorizaci vynucuje **backend** – MCP nástroj volá REST API s oprávněními uživatele dané AI relace; MCP vrstva sama guard nemá. Formulaci v klíči sjednotím.
 
-→ „Shrnu.“
-
-## 12 · Závěr (20 s)
-- Nová kategorie: edukační IS. Prototyp + 3 listy + dotazníky. Pilotáž potvrdila hypotézu.
-- Další rozvoj: SŠ, 1. stupeň, více škol, listy k bezpečnosti/GDPR, PWA, komunita učitelů.
-- „IS nemusí být administrativní nutnost – může být pomůcka, na které si žák digitální svět sám postaví. Děkuji.“
+→ Slide se ukazuje jen při reakci na posudky nebo v diskusi.
 
 ---
 
