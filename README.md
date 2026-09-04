@@ -32,4 +32,4 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 ## Nasazení
 
-Statický web bez buildu; kořen repozitáře je kořen webu. GitHub `vichpetr/is-edustack-prezentace`, Cloudflare Pages projekt `is-edustack-prezentace`. Po úpravách stačí `./deploy.sh "popis změny"`.
+Statický web bez buildu; kořen repozitáře je kořen webu. GitHub `edustack-is/is-edustack-prezentace`, Cloudflare Pages projekt `is-edustack-prezentace`. Po úpravách stačí `./deploy.sh "popis změny"`.
