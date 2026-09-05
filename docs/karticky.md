@@ -38,7 +38,7 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 - Bloom: žák jako **uživatel** jen čte známku (*zapamatovat/porozumět*) → jako **správce** zakládá třídu, řeší kolizi (*aplikovat/analyzovat*) → jako **spolutvůrce** navrhuje modul, čte ER diagram (*hodnotit/tvořit*).
 - Konstruktivismus: porozumění vzniká stavěním a správou něčeho, co dává smysl – simulovaná škola je takový artefakt.
 
-→ „A proč na to stačí jeden nástroj.“## 5 · Jeden nástroj pro všechny fáze učení (30 s)
+→ „A jak jeden systém roste se žákem.“## 5 · Jeden nástroj pro všechny fáze učení (30 s)
 **Tři fáze, jedno prostředí.**
 - Jiné nástroje: drag-and-drop programování (Scratch, Umíme to) = algoritmus, ne systém; modelátory databází (Airtable, Notion, Coda) = tabulky a vazby, ale bez domény školy a rolí.
 - Edu Stack IS pokrývá doménu školy, role a oprávnění, viditelný datový model, otevřený kód i blok IS z RVP – a všechny tři fáze (uživatel → správce → spolutvůrce) v jednom prostředí.
@@ -46,6 +46,29 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 - Zdroj: srovnávací tabulka v kapitole 5. Nerozvádět, tabulku jen ukázat.
 
 → „A ten jeden systém roste se žákem.“## 6 · Jeden systém pro všechny (60 s)
+**Systém zůstává, mění se kompetence žáka v čase.**
+- 1. stupeň – uživatelská vrstva: role jako pohled (žák/učitel/ředitel – co vidím, co smím).
+- 2. stupeň – konfigurační vrstva: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.
+- SŠ – vývojářská vrstva: ER diagram, REST/MCP API, vlastní skript, nový modul, šifrování/anonymizace.
+- Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce.
+- Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).
+
+→ „Aby to fungovalo, musí být dovoleno dělat chyby.“## 5 · Jeden systém pro všechny (60 s)
+**Systém zůstává, mění se kompetence žáka v čase.**
+- 1. stupeň – uživatelská vrstva: role jako pohled (žák/učitel/ředitel – co vidím, co smím).
+- 2. stupeň – konfigurační vrstva: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.
+- SŠ – vývojářská vrstva: ER diagram, REST/MCP API, vlastní skript, nový modul, šifrování/anonymizace.
+- Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce.
+- Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).
+
+→ „A proč na to stačí jeden nástroj.“## 6 · Jeden nástroj pro všechny fáze učení (30 s)
+**Tři fáze, jedno prostředí.**
+- Jiné nástroje: drag-and-drop programování (Scratch, Umíme to) = algoritmus, ne systém; modelátory databází (Airtable, Notion, Coda) = tabulky a vazby, ale bez domény školy a rolí.
+- Edu Stack IS pokrývá doménu školy, role a oprávnění, viditelný datový model, otevřený kód i blok IS z RVP – a všechny tři fáze (uživatel → správce → spolutvůrce) v jednom prostředí.
+- Pointa: jeden nástroj = **nižší kognitivní zátěž** (žák se neučí nové ovládání, ale nový pohled na známý systém) = **více času na obsah**: role, oprávnění, datové toky.
+- Zdroj: srovnávací tabulka v kapitole 5. Nerozvádět, tabulku jen ukázat.
+
+→ „Aby to fungovalo, musí být dovoleno dělat chyby.“## 6 · Jeden systém pro všechny (60 s)
 **Systém zůstává, mění se kompetence žáka v čase.**
 - 1. stupeň – uživatelská vrstva: role jako pohled (žák/učitel/ředitel – co vidím, co smím).
 - 2. stupeň – konfigurační vrstva: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.

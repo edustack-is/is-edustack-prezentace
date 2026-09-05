@@ -6,8 +6,8 @@
 | 2 | Myšlenka není nová – chyběla realizace | 0:30–1:30 | Dostál 2007 jako doklad, že téma existuje; školní IS (Bakaláři, EduPage) jako **vzor, ne konkurence** – žáci školu znají. |
 | 3 | Cíle práce | 1:30–2:15 | Tři cíle + předpoklad práce. |
 | 4 | Nejde o software, jde o to, co se na něm žák naučí | 2:15–3:00 | **Není to technická práce.** Bloomova taxonomie: žák jako uživatel → správce → spolutvůrce. |
-| 5 | Jeden nástroj pro všechny fáze učení | 3:00–3:30 | Porovnání s drag-and-drop programováním a modelátory databází; jeden nástroj = nižší kognitivní zátěž, více prostoru pro obsah. |
-| 6 | Jeden systém pro všechny | 3:30–4:30 | Tři vrstvy hloubky podle stupně; mění se jen kompetence žáka v čase. |
+| 5 | Jeden systém pro všechny | 3:00–4:00 | Tři vrstvy hloubky podle stupně; mění se jen kompetence žáka v čase. |
+| 6 | Jeden nástroj pro všechny fáze učení | 4:00–4:30 | Porovnání s drag-and-drop programováním a modelátory databází; jeden nástroj = nižší kognitivní zátěž, více prostoru pro obsah. |
 | 7 | Chyba je přirozená | 4:30–5:30 | Fiktivní data, reset, „zkus to rozbít“. Chyba jako úloha, ne riziko. |
 | 8 | Role a datové domény | 5:30–6:10 | Rychlý průlet: 6 rolí, 8 domén, viditelné vazby. |
 | 9 | Jak je systém postavený | 6:10–6:45 | Architektura v jednom obrázku, **bez detailů** – detaily do dotazů. |
@@ -19,7 +19,7 @@
 ## Dramaturgie
 
 1. **Otevření problémem** (slide 2): téma známé od 2007, ale chybí nástroj → proto tato práce.
-2. **Tři principy = jádro práce** (slidy 4–7): didaktika, proč jeden nástroj, jeden systém, chyba. Tady je nejvíc času a energie.
+2. **Tři principy = jádro práce** (slidy 4–7): didaktika, jeden systém, proč jeden nástroj, chyba. Tady je nejvíc času a energie.
 3. **Co a jak** (slidy 8–9): rychle, věcně, bez ponoření do techniky.
 4. **Důkaz** (slide 10) → **upřímná reflexe** (slide 11).
 5. **Zavřít pointou** (slide 12): IS jako pomůcka, na které si žák digitální svět sám postaví; kód je otevřený, web is-edustack.org.
