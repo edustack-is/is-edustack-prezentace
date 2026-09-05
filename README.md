@@ -7,9 +7,9 @@ Web: https://obhajoba.is-edustack.org
 ## Obsah
 
 - `index.html` – rozcestník (web / PDF / PPTX / kartičky / scénář / osnova).
-- `prezentace.html` – webová verze prezentace, 11 slidů + 1 doplňující (limity, k reakci na posudky), 16:9. Šipky / mezerník listování, `N` poznámky řečníka, `F` celá obrazovka, `1–9` skok na slide. Funguje offline.
+- `prezentace.html` – webová verze prezentace, 12 slidů + 1 doplňující (limity, k reakci na posudky), 16:9. Šipky / mezerník listování, `N` poznámky řečníka, `F` celá obrazovka, `1–9` skok na slide. Funguje offline.
 - `obhajoba-edustack.pptx` – PowerPoint s poznámkami řečníka, `obhajoba-edustack.pdf` – export.
-- `docs/karticky.pdf` – 16 kartiček A6 (4 na A4 na šířku): 12 ke slidům, 4 k otázkám z posudků. Zdroj `docs/karticky.html`, text `docs/karticky.md`.
+- `docs/karticky.pdf` – 17 kartiček A6 (4 na A4 na šířku): 13 ke slidům, 4 k otázkám z posudků. Zdroj `docs/karticky.html`, text `docs/karticky.md`.
 - `docs/scenar.pdf` – osnova, časování a scénář obhajoby. Zdroj `docs/scenar.html`, texty `docs/osnova.md`, `docs/scenar.md`.
 - `docs/osnova.html` – osnova jako webová stránka s odkazy na jednotlivé slidy.
 - `assets/` – logo.
