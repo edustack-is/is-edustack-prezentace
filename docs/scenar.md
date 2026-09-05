@@ -3,7 +3,7 @@
 ## Před obhajobou
 - Prezentaci mít **třikrát**: PPTX na USB, PDF (kdyby se rozsypaly fonty), webová verze (`index.html`, funguje offline i online).
 - Vyzkoušet promítání v učebně předem (R013B / dle rozpisu v SIS), ověřit, že jde česká diakritika a poměr 16:9.
-- Na stole jen kartičky (A6). Ne text práce – komise ví, že ji znáte.
+- Na stole jen kartičky (6 na list A4, rozstříhané). Ne text práce – komise ví, že ji znáte.
 - Připravit **jednu větu**, kterou začnete, a **jednu**, kterou skončíte. Obě jsou na kartičkách 1 a 12.
 
 ## Tón
