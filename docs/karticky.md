@@ -1,7 +1,7 @@
 # Kartičky k prezentaci (co říct, ne co číst)
 
 Formát: **hlavní myšlenka** · opěrné body · věta na přechod k dalšímu slidu.
-Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat opěrné body.
+Doporučení: tisková verze `karticky.pdf` má 6 karet na A4 na šířku (99 × 105 mm), jednu kartu na slide. Nečíst – jen sledovat opěrné body.
 
 ---
 
