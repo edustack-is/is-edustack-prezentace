@@ -41,8 +41,8 @@ ul{margin:0;padding-left:1.2em;line-height:1.45}li{margin-bottom:.45em}
 .layer .tag{color:#fff;border-radius:.5em;padding:.8em 1em;line-height:1.2}.layer .tag b{display:block;font-size:1.05em}.layer .tag small{font-size:.78em}
 .layer p{margin:0;font-size:.95em}
 .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:.8em;align-items:end;margin-top:.9em}
-.step{color:#fff;border-radius:.5em;padding:.8em 1em;line-height:1.3}.step b{display:block;margin-bottom:.35em}.step p{margin:0;font-size:.8em}
-.step.s1{background:#B8B0D6;min-height:5em}.step.s2{background:#8F7BCB;min-height:7.5em}.step.s3{background:var(--p);min-height:10em}
+.step{color:#fff;border-radius:.5em;padding:.8em 1em;line-height:1.3}.step b{display:block;margin-bottom:.35em}.step b small{font-weight:400;font-size:.8em;opacity:.9}.step p{margin:0;font-size:.8em}
+.step.s1{background:#B8B0D6;min-height:7em}.step.s2{background:#8F7BCB;min-height:9em}.step.s3{background:var(--p);min-height:11em}
 .cmpt{width:100%;border-collapse:collapse;font-size:.78em;margin-top:.6em}.cmpt th,.cmpt td{padding:.38em .7em;text-align:center;border-bottom:1px solid #E4DFF2;line-height:1.25}.cmpt th{color:var(--pd);font-size:.95em;vertical-align:bottom}.cmpt th small{display:block;font-weight:400;color:var(--mute);font-size:.85em}.cmpt td:first-child,.cmpt th:first-child{text-align:left}.cmpt td:first-child{color:var(--ink)}.cmpt .yes{color:var(--gr);font-weight:700}.cmpt .no{color:#B54A6A}.cmpt .part{color:var(--or);font-size:.9em}.cmpt .me{background:var(--tint);font-weight:700}.cmpt th.me{background:var(--pd);color:#fff;border-radius:.4em .4em 0 0}
 .take{display:grid;grid-template-columns:repeat(3,1fr);gap:.8em;margin-top:.9em}.take div{border-radius:.5em;padding:.7em .9em;font-size:.8em;line-height:1.35;background:var(--tint)}.take b{display:block;color:var(--pd);margin-bottom:.15em}.take .me{background:var(--pd);color:#fff}.take .me b{color:#fff}
 .cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:.8em;margin-top:1em}.cmp div{background:var(--tint);border-radius:.5em;padding:.7em .9em;font-size:.78em;line-height:1.35}.cmp b{display:block;color:var(--pd);font-size:1.05em}.cmp i{display:block;color:var(--mute);margin-bottom:.3em;font-size:.92em}.cmp .me{background:var(--pd);color:#fff}.cmp .me b{color:#fff}.cmp .me i{color:var(--lav)}
@@ -110,26 +110,16 @@ ul{margin:0;padding-left:1.2em;line-height:1.45}li{margin-bottom:.45em}
 </section>
 
 <section class="slide">
-  <h1>Nejde o software, jde o to, co se na něm žák naučí</h1>
-  <p class="lead">Software je pomůcka. Hlavní text práce popisuje role, procesy, úrovně a úlohy; technologie jsou vyčleněny do příloh (uživatelská příručka A, technická příloha B).</p>
-  <div class="ladder">
-    <div><span class="lbl">žák jako uživatel</span><div class="step s1"><b>zapamatovat / porozumět</b><p>žák čte známku, kterou eviduje někdo jiný</p></div></div>
-    <div><span class="lbl">žák jako správce</span><div class="step s2"><b>aplikovat / analyzovat</b><p>žák zakládá třídu, řeší kolizi v rozvrhu</p></div></div>
-    <div><span class="lbl">žák jako spolutvůrce</span><div class="step s3"><b>hodnotit / tvořit</b><p>žák navrhuje modul, čte ER diagram, volá API</p></div></div>
-  </div>
-  <p style="margin:1em 0 0;color:var(--pd);font-weight:700;font-size:.9em">Posun po Bloomově taxonomii: od uživatele k modeláři a správci</p>
-  <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích · <span class="pn"></span></span></div>
-  <div class="notes">Nejde o technickou práci. Software je pomůcka; hlavní text je didaktický a technika je v přílohách. Pedagogické jádro: posun po Bloomově taxonomii – žák jako uživatel jen čte známku; jako správce aplikuje a analyzuje (založí třídu, řeší kolizi); jako spolutvůrce hodnotí a tvoří (navrhne modul, čte ER diagram). Přechod: a jak jeden systém roste se žákem.</div>
-</section>
-
-<section class="slide">
   <h1>Jeden systém pro všechny – mění se jen kompetence</h1>
-  <div class="layer"><div class="tag" style="background:var(--bl)"><b>1. stupeň ZŠ</b><small>Uživatelská vrstva</small></div><p>Role jako pohled: přihlásím se jako žák, učitel, ředitel – co vidím a co smím? Zápis jedné známky, diskuse o odpovědnosti.</p></div>
-  <div class="layer"><div class="tag" style="background:var(--p)"><b>2. stupeň ZŠ</b><small>Konfigurační vrstva</small></div><p>Struktura jako řemeslo: založení třídy, předmětu, rozvrh s detekcí kolizí, AI asistent, otázka impersonace.</p></div>
-  <div class="layer"><div class="tag" style="background:var(--pk)"><b>Střední škola</b><small>Vývojářská vrstva</small></div><p>Systém jako platforma: ER diagram, REST a MCP API, vlastní skript, návrh nového modulu, šifrování a anonymizace.</p></div>
-  <p class="muted" style="font-size:.78em">Spirálové kurikulum: tatáž známka nebo rozvrh se vrací v každém stupni na vyšší úrovni abstrakce. Žák, který dnes klikne na známku, ji za pár let přečte ze svého skriptu – a pozná, že je to tatáž věc.</p>
+  <p class="lead" style="font-size:.95em">Software je pomůcka; hlavní text práce popisuje role, procesy, úrovně a úlohy (technika je v přílohách A a B). Systém zůstává stejný – mění se jen to, co v něm žák smí a umí.</p>
+  <div class="ladder">
+    <div><span class="lbl">1. stupeň ZŠ · uživatelská vrstva</span><div class="step s1"><b>žák jako uživatel<small> · zapamatovat / porozumět</small></b><p>Role jako pohled: přihlásím se jako žák, učitel, ředitel – co vidím a co smím? Zápis jedné známky.</p></div></div>
+    <div><span class="lbl">2. stupeň ZŠ · konfigurační vrstva</span><div class="step s2"><b>žák jako správce<small> · aplikovat / analyzovat</small></b><p>Struktura jako řemeslo: založení třídy a předmětu, rozvrh s detekcí kolizí, AI asistent, impersonace.</p></div></div>
+    <div><span class="lbl">Střední škola · vývojářská vrstva</span><div class="step s3"><b>žák jako spolutvůrce<small> · hodnotit / tvořit</small></b><p>Systém jako platforma: ER diagram, REST a MCP API, vlastní skript, návrh nového modulu, šifrování a anonymizace.</p></div></div>
+  </div>
+  <p class="muted" style="margin:1em 0 0;font-size:.8em"><b style="color:var(--pd)">Posun po Bloomově taxonomii</b> · spirálové kurikulum: tatáž známka se vrací v každém stupni na vyšší úrovni abstrakce · ke každému stupni pracovní list s klíčem pro učitele (Příloha C).</p>
   <div class="foot"><span>Edu Stack IS · Obhajoba bakalářské práce · Petr Vích · <span class="pn"></span></span></div>
-  <div class="notes">Druhý princip: jeden plnohodnotný systém se třemi vrstvami hloubky. 1. stupeň pozoruje – role jako pohled. 2. stupeň spravuje strukturu. SŠ jde pod kapotu – ER diagram, API, vlastní modul. Mění se kompetence žáka v čase, systém zůstává. Podle stupňů existují tři pracovní listy s klíčem pro učitele. Přechod: a proč na to stačí jeden nástroj.</div>
+  <div class="notes">Nejde o technickou práci: software je pomůcka, hlavní text je didaktický, technika je v přílohách. Druhý princip: jeden plnohodnotný systém se třemi vrstvami hloubky – systém zůstává, mění se kompetence žáka v čase. 1. stupeň – uživatelská vrstva: žák pozoruje, role jako pohled, zapíše známku (Bloom: zapamatovat, porozumět). 2. stupeň – konfigurační vrstva: žák jako správce zakládá třídy a předměty, řeší kolizi v rozvrhu (aplikovat, analyzovat). SŠ – vývojářská vrstva: žák jako spolutvůrce jde pod kapotu – ER diagram, API, vlastní modul (hodnotit, tvořit). Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce. Ke každému stupni je pracovní list s klíčem pro učitele. Přechod: a proč na to stačí jeden nástroj.</div>
 </section>
 
 <section class="slide">
