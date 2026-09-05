@@ -24,33 +24,28 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 
 ## 3 · Cíle (45 s)
 **Vymezit – navrhnout – ověřit.**
-1. Vymezit kategorii edukačních IS (4 kritéria: provozní/edukační, pasivní/aktivní, produkce/sandbox, uzavřený/otevřený).
-2. Navrhnout prototyp: věrný škole, otevřený, resetovatelný, tři vrstvy + pracovní listy.
+1. Vymezit edukační IS proti třem sousedům: **komerční ŠIS** (Bakaláři, EduPage – doména školy, ale uzavřené, žák pasivní), **low-code** (Airtable, Notion, Coda – otevřené, aktivní, ale bez domény školy), **výukové platformy informatiky** (Scratch, Umíme to – algoritmizace, IS jen okrajově).
+   - Kritéria: účel provozní/edukační · role žáka pasivní/aktivní · prostředí produkční/sandbox · otevřenost uzavřený/otevřený.
+2. Navrhnout prototyp: doménový model věrný škole · otevřený (kód, ER diagram) · bezpečně resetovatelný · **tři vrstvy hloubky** = uživatelská (klikám, 1. st.), konfigurační (stavím strukturu, 2. st.), vývojářská (API, kód, SŠ) · připravit pracovní listy pro podporu přípravy na výuku.
 3. Ověřit ve výuce.
-- Výzkumná otázka: lze simulací správy školy dovést žáka od používání k porozumění rolím, oprávněním a datovým tokům?
+- Předpoklad (v práci „výzkumná otázka“): simulace správy školy dovede žáka od používání k porozumění rolím, oprávněním a datovým tokům.
 
 → „Než ukážu systém, chci říct, co práce **není**.“
 
-## 4 · Software je pomůcka (60 s)
+## 4 · Nejde o software, jde o to, co se na něm žák naučí (45 s)
 **Není to technická práce.**
 - Hlavní text = didaktika (role, procesy, úrovně, úlohy). Technika = přílohy A, B.
-- Bloom: komerční ŠIS drží žáka u *zapamatovat/porozumět* (čte cizí známku).
-- Edu Stack IS: *aplikovat/analyzovat* (založí třídu, řeší kolizi) → *hodnotit/tvořit* (navrhne modul, čte ER diagram).
+- Bloom: žák jako **uživatel** jen čte známku (*zapamatovat/porozumět*) → jako **správce** zakládá třídu, řeší kolizi (*aplikovat/analyzovat*) → jako **spolutvůrce** navrhuje modul, čte ER diagram (*hodnotit/tvořit*).
 - Konstruktivismus: porozumění vzniká stavěním a správou něčeho, co dává smysl – simulovaná škola je takový artefakt.
 
-→ „Aby to fungovalo, musí být dovoleno dělat chyby.“
+→ „A jak jeden systém roste se žákem.“## 5 · Jeden nástroj pro všechny fáze učení (30 s)
+**Tři fáze, jedno prostředí.**
+- Jiné nástroje: drag-and-drop programování (Scratch, Umíme to) = algoritmus, ne systém; modelátory databází (Airtable, Notion, Coda) = tabulky a vazby, ale bez domény školy a rolí.
+- Edu Stack IS pokrývá doménu školy, role a oprávnění, viditelný datový model, otevřený kód i blok IS z RVP – a všechny tři fáze (uživatel → správce → spolutvůrce) v jednom prostředí.
+- Pointa: jeden nástroj = **nižší kognitivní zátěž** (žák se neučí nové ovládání, ale nový pohled na známý systém) = **více času na obsah**: role, oprávnění, datové toky.
+- Zdroj: srovnávací tabulka v kapitole 5. Nerozvádět, tabulku jen ukázat.
 
-## 5 · Chyba je přirozená (60 s)
-**Chyba je úloha, ne riziko.**
-- Jen fiktivní data → žádné GDPR riziko; učitel vygeneruje školu jedním klikem.
-- Multitenance + reset: každá třída vlastní instance, po hodině do výchozího stavu.
-- Omylem smazaný žák / záměrná kolize v rozvrhu = materiál k diskusi: *proč to šlo? kdo to mohl? co se ztratilo?*
-- V pilotáži potvrzeno: kolize v rozvrhu byla tématem, ne problémem.
-- Pointa: bez bezpečného resetu nemohu žáka vyzvat „zkus to rozbít“ – a to systém odhaluje nejlépe.
-
-→ „Třetí princip: není to tři aplikace, ale jedna.“
-
-## 6 · Jeden systém pro všechny (60 s)
+→ „A ten jeden systém roste se žákem.“## 6 · Jeden systém pro všechny (60 s)
 **Systém zůstává, mění se kompetence žáka v čase.**
 - 1. stupeň – uživatelská vrstva: role jako pohled (žák/učitel/ředitel – co vidím, co smím).
 - 2. stupeň – konfigurační vrstva: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.
@@ -58,26 +53,58 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 - Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce.
 - Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).
 
-→ „Co konkrétně v systému žák potká.“
+→ „Aby to fungovalo, musí být dovoleno dělat chyby.“## 5 · Jeden systém pro všechny (60 s)
+**Systém zůstává, mění se kompetence žáka v čase.**
+- 1. stupeň – uživatelská vrstva: role jako pohled (žák/učitel/ředitel – co vidím, co smím).
+- 2. stupeň – konfigurační vrstva: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.
+- SŠ – vývojářská vrstva: ER diagram, REST/MCP API, vlastní skript, nový modul, šifrování/anonymizace.
+- Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce.
+- Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).
 
-## 7 · Role a domény (45 s)
+→ „A proč na to stačí jeden nástroj.“## 6 · Jeden nástroj pro všechny fáze učení (30 s)
+**Tři fáze, jedno prostředí.**
+- Jiné nástroje: drag-and-drop programování (Scratch, Umíme to) = algoritmus, ne systém; modelátory databází (Airtable, Notion, Coda) = tabulky a vazby, ale bez domény školy a rolí.
+- Edu Stack IS pokrývá doménu školy, role a oprávnění, viditelný datový model, otevřený kód i blok IS z RVP – a všechny tři fáze (uživatel → správce → spolutvůrce) v jednom prostředí.
+- Pointa: jeden nástroj = **nižší kognitivní zátěž** (žák se neučí nové ovládání, ale nový pohled na známý systém) = **více času na obsah**: role, oprávnění, datové toky.
+- Zdroj: srovnávací tabulka v kapitole 5. Nerozvádět, tabulku jen ukázat.
+
+→ „Aby to fungovalo, musí být dovoleno dělat chyby.“## 6 · Jeden systém pro všechny (60 s)
+**Systém zůstává, mění se kompetence žáka v čase.**
+- 1. stupeň – uživatelská vrstva: role jako pohled (žák/učitel/ředitel – co vidím, co smím).
+- 2. stupeň – konfigurační vrstva: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.
+- SŠ – vývojářská vrstva: ER diagram, REST/MCP API, vlastní skript, nový modul, šifrování/anonymizace.
+- Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce.
+- Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).
+
+→ „Aby to fungovalo, musí být dovoleno dělat chyby.“
+## 7 · Chyba je přirozená (60 s)
+**Chyba je úloha, ne riziko.**
+- Jen fiktivní data → žádné GDPR riziko; učitel vygeneruje školu na pár kliků (stovky záznamů).
+- Multitenance + reset: každá cvičná škola vlastní oddělený datový prostor, po hodině do výchozího stavu.
+- Omylem smazaný žák / záměrná kolize v rozvrhu = materiál k diskusi: *proč to šlo? kdo to mohl? co se ztratilo?*
+- V pilotáži potvrzeno: kolize v rozvrhu byla tématem, ne problémem.
+- Pointa: bez bezpečného resetu nemohu žáka vyzvat „zkus to rozbít“ – a to systém odhaluje nejlépe.
+
+→ „Co konkrétně v systému žák potká.“ Kontrola: jsem pod 5:45?
+
+## 8 · Role a domény (40 s)
 **6 rolí, 8 domén, viditelné vazby.**
-- Každá role = vzdělávací příležitost (admin: tajné klíče; zástupce: kolize; učitel: odpovědnost za data; rodič: co komu ukazovat).
+- Každá role = vzdělávací příležitost (admin: tajné klíče; zástupce: kolize; učitel: odpovědnost za data; rodič: co komu ukazovat; žák: nejnižší role – co smím vidět a co ne).
 - 40+ tabulek didakticky rozděleno do 8 domén, každá má výukovou otázku („Jak systém ví, kdo jsem?“).
 - Vazby viditelné: nový předmět → rozvrh → klasifikace → úvazek.
 
 → „Rychle k tomu, jak je to postavené.“
 
-## 8 · Architektura (45 s) — RYCHLE
+## 9 · Architektura (35 s) — RYCHLE
 **Jeden obrázek, detaily do dotazů.**
 - React + Vite (Cloudflare Pages) → NestJS REST API (RBAC guard, audit) → SQLite, čisté SQL (better-sqlite3).
 - AI mimo jádro: MCP server vystavuje nástroje LLM, jen loopback → „AI není kouzelná část databáze“.
-- Monorepo (čitelné pro SŠ), multitenance, cloud (Fly.io + Cloudflare) i lokálně bez internetu.
-- Argon2, šifrované sloupce, SSO.
+- Monorepo (čitelné pro SŠ), multitenance. Nasazení: cloud (Fly.io + Cloudflare) i lokálně bez internetu.
+- Bezpečnost: Argon2, šifrované sloupce, SSO.
 
 → „A teď to podstatné – co se stalo ve třídě.“
 
-## 9 · Ověření (60 s)
+## 10 · Ověření (60 s)
 **Prožitek role vede k pochopení oprávnění.**
 - 16 žáků 9. třídy, 1 hodina, role zástupce ředitele a učitel, 3 pracovní listy, dotazník + řízená diskuse.
 - **15/16** aspoň částečně vysvětlilo, proč žák nevidí stejná data jako učitel (10 plně, 5 částečně).
@@ -87,7 +114,7 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 
 → „Čísla jsou jedna věc – druhá je, jaké to bylo.“
 
-## 10 · Zkušenost z hodiny (60 s) — OSOBNĚ
+## 11 · Zkušenost z hodiny (60 s) — OSOBNĚ
 **První výuka dětí – a co jsem se naučil.**
 - Mentoroval jsem dospělé, roky ve skautu; ve škole poprvé.
 - Systém plní, k čemu byl navržen – přihlášení, matrika, známky, AI, diskuse.
@@ -97,13 +124,13 @@ Doporučení: vytisknout na A6, jednu kartu na slide. Nečíst – jen sledovat 
 
 → „Shrnu.“
 
-## 11 · Závěr (45 s)
-- Nová kategorie: edukační IS. Prototyp + 3 listy + dotazníky. Pilotáž potvrdila hypotézu.
+## 12 · Závěr (45 s)
+- Nová kategorie: edukační IS. Prototyp + 3 listy + dotazníky. Pilotáž předpoklad podpořila.
 - Další rozvoj: SŠ, 1. stupeň, více škol, listy k bezpečnosti/GDPR, PWA, komunita učitelů.
 - Kód je otevřený na GitHubu (github.com/edustack-is), doprovodný web is-edustack.org s dokumentací pro učitele.
 - „IS nemusí být administrativní nutnost – může být pomůcka, na které si žák digitální svět sám postaví. Děkuji.“
 
-## 12 · Limity a posudky (doplňující – při reakci na posudky)
+## 13 · Limity a posudky (doplňující – při reakci na posudky)
 **Říct to dřív, než se komise zeptá.**
 - Ověření jen 2. stupeň → návrh: SŠ pilotáž na odborné škole (3. list: ER, API); 1. stupeň zkrácený list; přesný popis vzorku, ročníku, podmínek.
 - Kurikulum: stavím na RVP ZV; RVP G a SOV zaslouží samostatnou analýzu; mapování materiálů je typologické.
