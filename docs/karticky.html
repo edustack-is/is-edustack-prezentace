@@ -19,7 +19,10 @@ html,body{margin:0;padding:0;font-family:"Segoe UI",Calibri,"Helvetica Neue",Ari
 .ttl{font-size:10.5pt;font-weight:700;flex:1;line-height:1.15}
 .time{font-size:7.5pt;color:#6B6680;white-space:nowrap}
 .time b{color:#E24D8D}
-.main{font-size:10pt;font-weight:700;color:#3F2A78;margin:0 0 1.8mm;line-height:1.25}
+.main{font-size:9.2pt;font-weight:700;color:#3F2A78;margin:0 0 1.8mm;line-height:1.25}
+.main .lbl,.go .lbl{display:inline-block;font-size:6.2pt;letter-spacing:.06em;text-transform:uppercase;color:#8F89A6;font-weight:600;font-style:normal;margin-right:1.6mm;vertical-align:.2mm}
+.go{margin:0 0 1.8mm;font-size:8.8pt;line-height:1.3;color:#3F2A78;font-style:italic}
+.main{margin-bottom:1.2mm}
 ul{margin:0;padding-left:3.8mm;font-size:9.2pt;line-height:1.3;flex:1}
 li{margin-bottom:1.1mm}
 li b{color:#3F2A78}
@@ -38,72 +41,79 @@ li b{color:#3F2A78}
 <div class="card" style="--c:#3F2A78">
   <span class="tag">Úvod</span>
   <div class="head"><span class="num">1</span><span class="ttl">Titulní</span><span class="time"><b>30 s</b> · 0:00–0:30</span></div>
-  <p class="main">Kdo jsem a co jsem udělal.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Představit sebe, práci a strukturu deseti minut.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Dobrý den, jmenuji se Petr Vích a představím svou bakalářskou práci Informační systém pro podporu výuky informatiky.“</p>
   <ul>
-    <li>„Petr Vích, Informační systém pro podporu výuky informatiky.“</li>
-    <li>Jedna věta: <b>Edu Stack IS – edukační sandbox, kde žák není uživatel, ale správce fiktivní školy.</b></li>
-    <li>Struktura: východiska → cíle → tři principy → krátce technika → ověření → zkušenost → závěr.</li>
-    <li>Mluvit klidně, dívat se na komisi, ne na plátno.</li>
+    <li>Co vzniklo: <b>Edu Stack IS</b> – edukační sandbox, ve kterém žák není uživatel, ale správce fiktivní školy.</li>
+    <li>Struktura: odkud myšlenka → cíle → tři principy (didaktika, jeden systém, chyba) → co je uvnitř a jak je to postavené → ověření ve třídě → závěr.</li>
+    <li>Rámec hned na začátku: není to technická práce, software je pomůcka, těžiště je didaktické.</li>
   </ul>
   <div class="next">„Začnu tím, odkud ta myšlenka pochází.“</div>
 </div>
 <div class="card" style="--c:#3F2A78">
   <span class="tag">Východiska</span>
   <div class="head"><span class="num">2</span><span class="ttl">Myšlenka není nová – chyběla realizace</span><span class="time"><b>60 s</b> · 0:30–1:30</span></div>
-  <p class="main">Téma existuje od 2007, realizace chyběla.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Téma existuje od 2007, chyběl nástroj. Vymezit rozsah: ŠIS je vzor, já dělám učební pomůcku.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Myšlenka učit o informačních systémech na příkladu školy není nová.“</p>
   <ul>
-    <li><b>Dostál 2007:</b> školní IS jako integrovaná agenda školy – matrika, klasifikace, rozvrh, komunikace.</li>
-    <li>Co v literatuře ani praxi není: nástroj, kde má <b>žák plný přístup</b> a sám spravuje data, role, oprávnění.</li>
-    <li>Bakaláři, EduPage, Škola OnLine = <b>vzor funkcí, ne konkurence</b>.</li>
-    <li>Proč vzor: žáci (i na 1. stupni) vědí, jak škola funguje → nemusím vysvětlovat doménu, ukazuji rovnou vnitřek IS.</li>
+    <li><b>Dostál 2007</b>: školní IS jako integrovaná agenda školy – matrika, klasifikace, rozvrh, komunikace. Téma je v literatuře.</li>
+    <li>Co chybělo: nástroj, kde má <b>žák plný přístup</b> a sám spravuje data, role a oprávnění. Tuto mezeru práce vyplňuje.</li>
+    <li>Rozsah: nestavím konkurenci Bakalářům či EduPage – to jsou provozní systémy pro administrativu. Já dělám <b>učební pomůcku</b>; komerční ŠIS jsou pro mě vzor funkcí.</li>
+    <li>Proč škola: žáci ji znají (rozvrh, známky, omluvenky) → nemusím vysvětlovat doménu, ukazuji rovnou vnitřek IS. Funguje i pro mladší žáky.</li>
   </ul>
   <div class="next">„Z toho plynou tři cíle.“</div>
 </div>
 <div class="card" style="--c:#6544AF">
   <span class="tag">Cíle</span>
   <div class="head"><span class="num">3</span><span class="ttl">Cíle práce</span><span class="time"><b>45 s</b> · 1:30–2:15</span></div>
-  <p class="main">Vymezit – navrhnout – ověřit.</p>
-  <ul style="font-size:8.1pt;line-height:1.26">
-    <li><b>1 Vymezit</b> edukační IS proti třem sousedům: <b>komerční ŠIS</b> (Bakaláři, EduPage – doména školy, ale uzavřené, žák pasivní), <b>low-code</b> (Airtable, Notion, Coda – otevřené, aktivní, ale bez domény školy), <b>výukové platformy informatiky</b> (Scratch, Umíme to – algoritmizace, IS jen okrajově).</li>
-    <li>Kritéria: <b>účel</b> provozní/edukační · <b>role žáka</b> pasivní/aktivní · <b>prostředí</b> produkční/sandbox · <b>otevřenost</b> uzavřený/otevřený.</li>
-    <li><b>2 Navrhnout</b> prototyp: doménový model věrný škole · otevřený (kód, ER diagram) · bezpečně resetovatelný · <b>tři vrstvy hloubky</b> = uživatelská (klikám, 1. st.), konfigurační (stavím strukturu, 2. st.), vývojářská (API, kód, SŠ) · připravit pracovní listy pro podporu přípravy na výuku.</li>
-    <li><b>3 Ověřit</b> ve výuce. Předpoklad (v práci „výzkumná otázka“): simulace správy školy dovede žáka od používání k porozumění rolím, oprávněním a datovým tokům.</li>
+  <p class="main"><span class="lbl">Kam mířím</span>Tři cíle a předpoklad. Motivace: dostat žáka od používání k porozumění.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Práce má tři cíle: vymezit, navrhnout a ověřit.“</p>
+  <ul style="font-size:8pt;line-height:1.26">
+    <li><b>1 Vymezit</b> kategorii edukačních IS proti třem sousedům: komerční ŠIS (doména školy, ale uzavřené, žák pasivní) · low-code (Airtable, Notion – otevřené, bez domény školy) · výukové platformy (Scratch, Umíme to – algoritmizace, IS okrajově). Kritéria: účel · role žáka · prostředí · otevřenost.</li>
+    <li><b>2 Navrhnout</b> prototyp: doménový model věrný škole · otevřený · bezpečně resetovatelný · tři vrstvy hloubky · připravit pracovní listy pro podporu přípravy na výuku.</li>
+    <li><b>3 Ověřit</b> ve výuce.</li>
+    <li><b>Předpoklad</b>: simulace správy školy dovede žáka od používání k porozumění rolím, oprávněním a datovým tokům. (V textu práce „výzkumná otázka“.)</li>
   </ul>
   <div class="next">„Než ukážu systém, chci říct, co práce <b>není</b>.“</div>
 </div>
 <div class="card" style="--c:#6544AF">
-  <span class="tag">Princip 1 · srdce práce</span>
+  <span class="tag">Princip 1 · didaktika</span>
   <div class="head"><span class="num">4</span><span class="ttl">Nejde o software, jde o to, co se na něm žák naučí</span><span class="time"><b>45 s</b> · 2:15–3:00</span></div>
-  <p class="main">Není to technická práce.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Jeden software po celou dobu, mění se jen kompetence žáka. Práce je pedagogická.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Software je pomůcka – hlavní text práce je o tom, co se na něm žák naučí.“</p>
   <ul>
-    <li>Hlavní text = didaktika (role, procesy, úrovně, úlohy). Technika = přílohy A, B.</li>
-    <li><b>Bloom:</b> žák jako <b>uživatel</b> jen čte známku (<i>zapamatovat / porozumět</i>) → jako <b>správce</b> zakládá třídu, řeší kolizi (<i>aplikovat / analyzovat</i>) → jako <b>spolutvůrce</b> navrhuje modul, čte ER diagram (<i>hodnotit / tvořit</i>).</li>
-    <li>Konstruktivismus: porozumění vzniká stavěním a správou něčeho, co dává smysl – simulovaná škola je takový artefakt.</li>
+    <li>Text práce: role, procesy, úrovně, úlohy. Technika je v přílohách A (příručka) a B (technická).</li>
+    <li><b>Žebřík (Bloom)</b>: žák jako <b>uživatel</b> čte známku (zapamatovat / porozumět) → jako <b>správce</b> zakládá třídu, řeší kolizi (aplikovat / analyzovat) → jako <b>spolutvůrce</b> navrhuje modul, čte ER diagram (hodnotit / tvořit).</li>
+    <li>Pointa: systém je stále tentýž, mění se jen to, co v něm žák smí a umí.</li>
+    <li>Konstruktivismus: porozumění vzniká stavěním a správou něčeho smysluplného – simulovaná škola je takový artefakt.</li>
   </ul>
-  <div class="next">„A jak jeden systém roste se žákem.“</div>
+  <div class="next">„A jak ten jeden systém roste se žákem.“</div>
 </div>
 <div class="card" style="--c:#E24D8D">
-  <span class="tag">Princip 2 · srdce práce</span>
+  <span class="tag">Princip 2 · jeden systém</span>
   <div class="head"><span class="num">5</span><span class="ttl">Jeden systém pro všechny</span><span class="time"><b>60 s</b> · 3:00–4:00</span></div>
-  <p class="main">Systém zůstává, mění se kompetence žáka v čase.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Totéž z pohledu stupňů školy: tři vrstvy hloubky. Rekapitulace slidu 4 jinou optikou.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Tři fáze ze žebříku odpovídají třem stupňům školy – a třem vrstvám systému.“</p>
   <ul>
-    <li><b>1. stupeň – uživatelská vrstva:</b> role jako pohled (žák / učitel / ředitel – co vidím, co smím).</li>
-    <li><b>2. stupeň – konfigurační vrstva:</b> třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace.</li>
-    <li><b>SŠ – vývojářská vrstva:</b> ER diagram, REST/MCP API, vlastní skript, nový modul, šifrování / anonymizace.</li>
-    <li>Spirálové kurikulum: tatáž známka se vrací na vyšší úrovni abstrakce.</li>
+    <li><b>1. stupeň – uživatelská vrstva</b>: klikací rozhraní; role jako pohled (přihlásím se jako žák / učitel / ředitel – co vidím, co smím); zápis jedné známky.</li>
+    <li><b>2. stupeň – konfigurační vrstva</b>: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace („vstoupit jako…“).</li>
+    <li><b>SŠ – vývojářská vrstva</b>: ER diagram, REST / MCP API, vlastní skript, nový modul, šifrování a anonymizace.</li>
+    <li>Spirála: tatáž známka se vrací na vyšší úrovni abstrakce – dnes na ni kliknu, za pár let ji přečtu ze svého skriptu.</li>
     <li>Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).</li>
   </ul>
   <div class="next">„A proč na to stačí jeden nástroj.“</div>
 </div>
-<div class="card" style="--c:#6544AF">
+<div class="card" style="--c:#E24D8D">
   <span class="tag">Princip 2 · doplněk</span>
   <div class="head"><span class="num">6</span><span class="ttl">Jeden nástroj pro všechny fáze učení</span><span class="time"><b>30 s</b> · 4:00–4:30</span></div>
-  <p class="main">Tři fáze, jedno prostředí.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Porovnání výukových nástrojů. Pointa: jeden nástroj = nižší zátěž, více času na obsah.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Když se podívám, co se žák naučí o informačním systému v jiných nástrojích…“</p>
   <ul>
-    <li><b>Jiné nástroje:</b> drag-and-drop programování (Scratch, Umíme to) = algoritmus, ne systém; modelátory databází (Airtable, Notion, Coda) = tabulky a vazby, ale bez domény školy a rolí.</li>
-    <li><b>Edu Stack IS</b> pokrývá doménu školy, role a oprávnění, viditelný datový model, otevřený kód i blok IS z RVP – a všechny tři fáze (uživatel → správce → spolutvůrce) v jednom prostředí.</li>
-    <li><b>Pointa:</b> jeden nástroj = <b>nižší kognitivní zátěž</b> (žák se neučí nové ovládání, ale nový pohled na známý systém) = <b>více času na obsah</b>: role, oprávnění, datové toky.</li>
-    <li>Zdroj: srovnávací tabulka v kapitole 5. Nerozvádět, tabulku jen ukázat.</li>
+    <li><b>Drag-and-drop programování</b> (Scratch, Umíme to): algoritmus a program, ne systém – bez rolí, oprávnění a dat organizace.</li>
+    <li><b>Modelátory databází</b> (Airtable, Notion, Coda): tabulky a vazby, ale bez domény školy a rolí.</li>
+    <li><b>Edu Stack IS</b>: doména školy, RBAC, viditelný datový model, otevřený kód, blok IS z RVP – a všechny tři fáze v jednom prostředí.</li>
+    <li>Pointa: jeden nástroj → žák se neučí nové ovládání, ale nový pohled → <b>nižší kognitivní zátěž</b> → více času na role, oprávnění, datové toky.</li>
+    <li>Zdroj: srovnávací tabulka v kapitole 5. Nerozvádět.</li>
   </ul>
   <div class="next">„Aby to fungovalo, musí být dovoleno dělat chyby.“</div>
 </div>
@@ -113,80 +123,85 @@ li b{color:#3F2A78}
 <!-- ===== Strana 2 ===== -->
 <div class="page">
 <div class="card" style="--c:#E24D8D">
-  <span class="tag">Princip 3 · srdce práce</span>
+  <span class="tag">Princip 3 · chyba</span>
   <div class="head"><span class="num">7</span><span class="ttl">Chyba je přirozená</span><span class="time"><b>60 s</b> · 4:30–5:30</span></div>
-  <p class="main">Chyba je úloha, ne riziko.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Chyba je výhoda výuky, ne riziko – díky fiktivním datům a resetu.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Třetí princip je práce s chybou.“</p>
   <ul>
     <li>Jen <b>fiktivní data</b> → žádné GDPR riziko; učitel vygeneruje školu na pár kliků (stovky záznamů).</li>
-    <li>Multitenance + <b>reset</b>: každá cvičná škola vlastní oddělený datový prostor, po hodině do výchozího stavu.</li>
-    <li>Omylem smazaný žák / záměrná kolize v rozvrhu = materiál k diskusi: <i>proč to šlo? kdo to mohl? co se ztratilo?</i></li>
-    <li>V pilotáži potvrzeno: kolize v rozvrhu byla tématem, ne problémem.</li>
-    <li>Pointa: bez bezpečného resetu nemohu žáka vyzvat „zkus to rozbít“ – a to systém odhaluje nejlépe.</li>
+    <li>Každá cvičná škola má <b>oddělený datový prostor</b> (multitenance); po hodině reset do výchozího stavu.</li>
+    <li>Omylem smazaný žák nebo záměrná kolize v rozvrhu = materiál k diskusi: <i>proč to šlo? kdo to mohl? co se ztratilo?</i></li>
+    <li>Pilotáž: kolize v rozvrhu byla tématem diskuse, ne problémem.</li>
+    <li>Pointa: bez bezpečného resetu nemohu říct „zkus to rozbít“ – a právě to nejlépe odhaluje, jak systém funguje.</li>
   </ul>
-  <div class="next">„Co konkrétně v systému žák potká.“ · <b>Kontrola: jsem pod 5:45?</b></div>
+  <div class="next">„Co konkrétně v systému žák potká.“ · <b>Čas: jsem pod 5:45?</b></div>
 </div>
 <div class="card" style="--c:#7EC3E4">
   <span class="tag">Co a jak · svižně</span>
   <div class="head"><span class="num">8</span><span class="ttl">Role a datové domény</span><span class="time"><b>40 s</b> · 5:30–6:10</span></div>
-  <p class="main">6 rolí, 8 domén, viditelné vazby.</p>
-  <ul>
-    <li>Každá role = vzdělávací příležitost (admin: tajné klíče; zástupce: kolize; učitel: odpovědnost za data; rodič: co komu ukazovat; žák: nejnižší role – co smím vidět a co ne).</li>
-    <li>40+ tabulek didakticky rozděleno do 8 domén, každá má výukovou otázku („Jak systém ví, kdo jsem?“).</li>
-    <li>Vazby viditelné: nový předmět → rozvrh → klasifikace → úvazek.</li>
-    <li>Když je málo času: dvě věty a dál.</li>
+  <p class="main"><span class="lbl">Kam mířím</span>Shrnutí, co je uvnitř: 6 rolí, 8 domén, viditelné vazby.</p>
+  <p class="go"><span class="lbl">Navázat</span>„V systému je šest rolí a každá učí něco jiného.“</p>
+  <ul style="font-size:8.4pt;line-height:1.27">
+    <li><b>Role</b>: administrátor (provoz více škol, tajné klíče) · ředitel (pohled shora) · zástupce (rozvrh, suplování, kolize) · učitel (známky, třídní kniha – odpovědnost za data) · rodič (co komu systém ukazuje) · žák (nejnižší role – co smím vidět a co ne).</li>
+    <li><b>Data</b>: 40+ tabulek, didakticky v 8 doménách, každá s otázkou – identita („Jak systém ví, kdo jsem?“), akademická struktura, úvazky a prostory, rozvrh a třídní kniha, docházka a klasifikace, plánování a materiály, komunikace, systém a AI.</li>
+    <li>Vazby jsou vidět: nový předmět → rozvrh → klasifikace → úvazek.</li>
   </ul>
   <div class="next">„Rychle k tomu, jak je to postavené.“</div>
 </div>
 <div class="card" style="--c:#7EC3E4">
-  <span class="tag">Co a jak · RYCHLE</span>
+  <span class="tag">Co a jak · rychle</span>
   <div class="head"><span class="num">9</span><span class="ttl">Jak je systém postavený</span><span class="time"><b>35 s</b> · 6:10–6:45</span></div>
-  <p class="main">Jeden obrázek, detaily do dotazů.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Technický popis v jednom obrázku, moduly. Detaily až v dotazech.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Technicky jen stručně – detaily rád v dotazech.“</p>
   <ul>
-    <li>React + Vite (Cloudflare Pages) → NestJS REST API (RBAC guard, audit) → SQLite, čisté SQL (better-sqlite3).</li>
-    <li>AI mimo jádro: MCP server vystavuje nástroje LLM, jen loopback → „AI není kouzelná část databáze“.</li>
-    <li>Monorepo (čitelné pro SŠ), multitenance. <b>Nasazení:</b> cloud (Fly.io + Cloudflare) i lokálně bez internetu.</li>
-    <li><b>Bezpečnost:</b> Argon2, šifrované sloupce, SSO. – <b>Nerozvádět.</b> Nabídnout: „rád ukážu v příloze B“.</li>
+    <li>Prohlížeč → <b>frontend</b> React + Vite (Cloudflare Pages) → <b>backend</b> NestJS REST API (RBAC guard, audit) → <b>SQLite</b>, čisté SQL (better-sqlite3).</li>
+    <li><b>AI mimo jádro</b>: MCP server vystavuje nástroje LLM (Gemini, OpenAI), běží jen na loopbacku → žák vidí, že AI je oddělená služba, ne kouzelná část databáze.</li>
+    <li>Monorepo čitelné pro SŠ · multitenance · <b>Nasazení</b>: cloud (Fly.io + Cloudflare) i lokálně bez internetu · <b>Bezpečnost</b>: Argon2, šifrované sloupce, SSO.</li>
+    <li>Na dotaz: „mohu ukázat v příloze B“.</li>
   </ul>
   <div class="next">„A teď to podstatné – co se stalo ve třídě.“</div>
 </div>
 <div class="card" style="--c:#4CAF6A">
   <span class="tag">Důkaz</span>
   <div class="head"><span class="num">10</span><span class="ttl">Ověření ve výuce</span><span class="time"><b>60 s</b> · 6:45–7:45</span></div>
-  <p class="main">Prožitek role vede k pochopení oprávnění.</p>
-  <ul>
-    <li>16 žáků 9. třídy, 1 hodina, role zástupce ředitele a učitel, 3 pracovní listy, dotazník + řízená diskuse.</li>
-    <li><b>15/16</b> aspoň částečně vysvětlilo, proč žák nevidí stejná data jako učitel (10 plně, 5 částečně).</li>
-    <li><b>14/16</b> chce pokračovat. Vzhled medián <b>9,5</b>, snadnost <b>9,0</b>.</li>
-    <li>Bavily známky (8) a AI asistent (6) – „učesání“ hodnocení otevřelo češtinu i etiku.</li>
-    <li>13 přihlášení hned, žádný pád, 2 věcné podněty; 1 protestní respondent v datech ponechán a komentován.</li>
+  <p class="main"><span class="lbl">Kam mířím</span>Čísla z pilotáže a co znamenají. Hlavní: prožitek role vede k pochopení oprávnění.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Systém jsem ověřil v jedné hodině s deváťáky.“</p>
+  <ul style="font-size:8.6pt;line-height:1.27">
+    <li>16 žáků 9. třídy, 1 hodina, role zástupce ředitele a učitel, 3 pracovní listy (matrika, rozvrh, AI asistent), dotazník + řízená diskuse.</li>
+    <li><b>15/16</b> aspoň částečně vysvětlilo, proč žák nevidí stejná data jako učitel (10 plně, 5 částečně) → RBAC pochopili prožitkem, ne výkladem.</li>
+    <li><b>14/16</b> chce pokračovat · vzhled medián <b>9,5</b> · snadnost <b>9,0</b> (škála 1–10).</li>
+    <li>Bavily známky (8) a AI asistent (6): „učesání“ slovního hodnocení otevřelo češtinu i etiku.</li>
+    <li>Technicky: 13 přihlášení hned, žádný pád, 2 věcné podněty (editace hodnocení, signalizace čekání na AI); 1 protestní odpověď v datech ponechána a komentována.</li>
   </ul>
   <div class="next">„Čísla jsou jedna věc – druhá je, jaké to bylo.“</div>
 </div>
 <div class="card" style="--c:#4CAF6A">
-  <span class="tag">Reflexe · OSOBNĚ</span>
+  <span class="tag">Reflexe</span>
   <div class="head"><span class="num">11</span><span class="ttl">Zkušenost z hodiny</span><span class="time"><b>60 s</b> · 7:45–8:45</span></div>
-  <p class="main">První výuka dětí – a co jsem se naučil.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Subjektivní hodnocení začínajícího učitele. Strach klikat je argument pro sandbox, ne proti.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Byla to moje první hodina s dětmi ve škole.“</p>
   <ul>
-    <li>Mentoroval jsem dospělé, roky ve skautu; ve škole jako pedagog poprvé.</li>
-    <li>Systém plní, k čemu byl navržen – přihlášení, matrika, známky, AI, diskuse.</li>
-    <li>Ale: za jednu hodinu plný potenciál nevyužiješ – třída na tento styl není zvyklá, vysvětlování zabralo víc než úlohy.</li>
-    <li>Žáci se <b>báli klikat</b>, aby něco nezkazili → paradox: sandbox je tu proto, aby se nebáli, ale jistotu si musí odžít.</li>
-    <li>Poučení: krátká úvodní hodina „nic nezkazíš“; rozvrh (2. list) do další hodiny.</li>
+    <li>Mentoroval jsem dospělé, roky vedl skautský oddíl; jako učitel ve škole poprvé.</li>
+    <li>Systém plní, k čemu byl navržen: přihlášení, matrika, známky, AI, diskuse o oprávněních.</li>
+    <li>Jedna hodina nestačí na plný potenciál: třída na tento styl nebyla zvyklá, vysvětlování zabralo víc času než úlohy.</li>
+    <li>Žáci se <b>báli klikat</b>, „aby něco nezkazili“ → paradox: sandbox je tu proto, aby se bát nemuseli, ale tu jistotu si musí nejdřív odžít.</li>
+    <li>Poučení: krátká úvodní hodina „nic nezkazíš“; rozvrh (2. list) až do další hodiny.</li>
   </ul>
   <div class="next">„Shrnu.“</div>
 </div>
 <div class="card" style="--c:#F28C28">
   <span class="tag">Závěr</span>
   <div class="head"><span class="num">12</span><span class="ttl">Závěr</span><span class="time"><b>45 s</b> · 8:45–9:30</span></div>
-  <p class="main">Shrnutí, otevřený kód, pointa, poděkování.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Rekapitulace, otevřený kód a doprovodný web, pointa, poděkování.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Shrnuto: vymezil jsem kategorii, postavil prototyp a ověřil ho ve výuce.“</p>
   <ul>
-    <li>Nová kategorie: edukační IS. Prototyp + 3 listy + dotazníky. Pilotáž předpoklad podpořila.</li>
-    <li>Další rozvoj: SŠ, 1. stupeň, více škol, listy k bezpečnosti / GDPR, PWA, komunita učitelů.</li>
-    <li>Kód je <b>otevřený na GitHubu</b> (github.com/edustack-is), doprovodný web <b>is-edustack.org</b> s dokumentací pro učitele.</li>
-    <li>Závěrečná věta (říct zpaměti, pomalu): <b>„IS nemusí být administrativní nutnost – může být pomůcka, na které si žák digitální svět sám postaví.“</b></li>
-    <li>„Děkuji za pozornost, rád odpovím na otázky.“</li>
+    <li>Nová kategorie: edukační IS – doménově věrný, otevřený, sandboxový, vícevrstvý.</li>
+    <li>Prototyp Edu Stack IS + 3 pracovní listy s klíčem pro učitele + dotazníky. Pilotáž předpoklad podpořila.</li>
+    <li>Další rozvoj: SŠ a 1. stupeň, více škol, listy k bezpečnosti / GDPR, mobilní rozhraní, komunita učitelů.</li>
+    <li>Kód je <b>otevřený na GitHubu</b> (github.com/edustack-is), k systému je doprovodný web <b>is-edustack.org</b> s dokumentací pro učitele.</li>
+    <li>Závěrečná věta (pomalu): <b>„Informační systém nemusí být ve škole jen administrativní nutnost – může být pomůcka, na které si žák digitální svět sám postaví.“</b> „Děkuji za pozornost.“</li>
   </ul>
-  <div class="next">Pak: poslouchat posudky, čárky ke 4 tématům (SŠ, kurikulum, dotazník, MCP). Karty 13 a A–D.</div>
+  <div class="next">Pak posudky: čárky ke 4 tématům (SŠ, kurikulum, dotazník, MCP). Karta 13 a A–D.</div>
 </div>
 
 </div>
@@ -196,12 +211,13 @@ li b{color:#3F2A78}
 <div class="card" style="--c:#F28C28">
   <span class="tag">Doplňující · při reakci na posudky</span>
   <div class="head"><span class="num">13</span><span class="ttl">Limity a reakce na posudky</span><span class="time"><b>záložní</b> · po posudcích</span></div>
-  <p class="main">Ukázat jen, když to diskusi pomůže. Přiznat jako první.</p>
+  <p class="main"><span class="lbl">Kam mířím</span>Přiznat limity jako první. Slide ukázat jen, když to diskusi pomůže.</p>
+  <p class="go"><span class="lbl">Navázat</span>„Limity práce vidím čtyři – a oba posudky je pojmenovaly.“</p>
   <ul>
     <li><b>Jen 2. stupeň</b> → návrh: SŠ pilotáž na odborné škole (3. list: ER, API); 1. stupeň zkrácený list; přesný popis vzorku, ročníku, podmínek.</li>
-    <li><b>Kurikulum:</b> stavím na RVP ZV; RVP G a SOV zaslouží samostatnou analýzu; mapování materiálů je typologické.</li>
-    <li><b>Dotazník:</b> správně „vlastní strukturovaný“, ne „standardizovaný“. Pedagogický dotazník připraven, výsledky nejsou prezentovány.</li>
-    <li><b>MCP rozpor:</b> autorizaci vynucuje backend – MCP nástroj volá REST API s oprávněními uživatele dané AI relace; MCP vrstva sama guard nemá. Formulaci v klíči sjednotím.</li>
+    <li><b>Kurikulum</b>: stavím na RVP ZV; RVP G a SOV zaslouží samostatnou analýzu; mapování materiálů je typologické.</li>
+    <li><b>Dotazník</b>: správně „vlastní strukturovaný“, ne „standardizovaný“. Pedagogický dotazník připraven, výsledky nejsou prezentovány.</li>
+    <li><b>MCP rozpor</b>: autorizaci vynucuje backend – MCP nástroj volá REST API s oprávněními uživatele dané AI relace; MCP vrstva sama guard nemá. Formulaci v klíči sjednotím.</li>
   </ul>
   <div class="next">Model odpovědi: „Ano, to platí. Udělal bych X.“ Detaily na kartách A–D.</div>
 </div>
