@@ -32,4 +32,8 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 ## Nasazení
 
-Statický web bez buildu; kořen repozitáře je kořen webu. GitHub `edustack-is/is-edustack-prezentace`, Cloudflare Pages na účtu petr@petrvich.work napojený přímo na repozitář, doména https://obhajoba.is-edustack.org. Každý push na `main` se nasadí automaticky. Po úpravách stačí `./deploy.sh "popis změny"`.
+Statický web bez buildu; kořen repozitáře je kořen webu. GitHub `edustack-is/is-edustack-prezentace`, Cloudflare Worker `is-edustack-prezentace` (statické soubory, Workers Builds) na účtu petr@petrvich.work, doména https://obhajoba.is-edustack.org.
+
+- `wrangler.jsonc` říká, že se nasazuje adresář `./` jako statické soubory; `.assetsignore` vyjmenovává, co se servírovat nemá (`.git`, README, skripty).
+- Push do `main` nasadí produkci, push do jiné větve / PR vytvoří preview.
+- Po úpravách stačí `./deploy.sh "popis změny"`.
