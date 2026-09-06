@@ -33,7 +33,7 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 
 → „Nejdřív princip, na kterém všechno stojí.“
 
-## 4 · Jeden systém pro všechny – mění se jen kompetence (90 s · 2:15–3:45)
+## 4 · Systém zůstává, roste žák (90 s · 2:15–3:45)
 **Kam mířím:** Jeden software po celou dobu, mění se jen kompetence žáka. Práce je pedagogická, ne technická.
 **Navázat:** „Software je pomůcka – podstatné je, co se na něm žák naučí. A ten systém je celou dobu stejný.“
 - Text práce: role, procesy, úrovně, úlohy. Technika je v přílohách A (příručka) a B (technická).

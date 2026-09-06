@@ -5,7 +5,7 @@
 | 1 | Titulní | 0:00–0:30 | Představit se, jednou větou říct, co Edu Stack IS je. |
 | 2 | Myšlenka není nová – chyběla realizace | 0:30–1:30 | Dostál 2007 jako doklad, že téma existuje; školní IS (Bakaláři, EduPage) jako **vzor, ne konkurence** – žáci školu znají. |
 | 3 | Cíle práce | 1:30–2:15 | Tři cíle + předpoklad práce. |
-| 4 | Jeden systém pro všechny – mění se jen kompetence | 2:15–3:45 | **Není to technická práce.** Tři vrstvy hloubky podle stupně = tři fáze Bloomovy taxonomie; systém zůstává, mění se kompetence žáka. |
+| 4 | Systém zůstává, roste žák | 2:15–3:45 | **Není to technická práce.** Tři vrstvy hloubky podle stupně = tři fáze Bloomovy taxonomie; systém zůstává, mění se kompetence žáka. |
 | 5 | Jeden nástroj pro všechny fáze učení | 3:45–4:15 | Porovnání s drag-and-drop programováním a modelátory databází; jeden nástroj = nižší kognitivní zátěž, více prostoru pro obsah. |
 | 6 | Chyba je přirozená | 4:15–5:15 | Fiktivní data, reset, „zkus to rozbít“. Chyba jako úloha, ne riziko. |
 | 7 | Role a datové domény | 5:15–5:55 | Rychlý průlet: 6 rolí, 8 domén, viditelné vazby. |
