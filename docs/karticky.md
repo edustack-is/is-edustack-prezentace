@@ -31,30 +31,20 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 - **3 Ověřit** ve výuce.
 - **Předpoklad**: simulace správy školy dovede žáka od používání k porozumění rolím, oprávněním a datovým tokům. (V textu práce „výzkumná otázka“.)
 
-→ „Než ukážu systém, chci říct, co práce **není**.“
+→ „Nejdřív princip, na kterém všechno stojí.“
 
-## 4 · Nejde o software, jde o to, co se na něm žák naučí (45 s · 2:15–3:00)
-**Kam mířím:** Jeden software po celou dobu, mění se jen kompetence žáka. Práce je pedagogická.
-**Navázat:** „Software je pomůcka – hlavní text práce je o tom, co se na něm žák naučí.“
+## 4 · Systém zůstává, roste žák (90 s · 2:15–3:45)
+**Kam mířím:** Jeden software po celou dobu, mění se jen kompetence žáka. Práce je pedagogická, ne technická.
+**Navázat:** „Software je pomůcka – podstatné je, co se na něm žák naučí. A ten systém je celou dobu stejný.“
 - Text práce: role, procesy, úrovně, úlohy. Technika je v přílohách A (příručka) a B (technická).
-- **Žebřík (Bloom)**: žák jako **uživatel** čte známku (zapamatovat / porozumět) → jako **správce** zakládá třídu, řeší kolizi (aplikovat / analyzovat) → jako **spolutvůrce** navrhuje modul, čte ER diagram (hodnotit / tvořit).
-- Pointa: systém je stále tentýž, mění se jen to, co v něm žák smí a umí.
-- Konstruktivismus: porozumění vzniká stavěním a správou něčeho smysluplného – simulovaná škola je takový artefakt.
-
-→ „A jak ten jeden systém roste se žákem.“
-
-## 5 · Jeden systém pro všechny (60 s · 3:00–4:00)
-**Kam mířím:** Totéž z pohledu stupňů školy: tři vrstvy hloubky. Rekapitulace slidu 4 jinou optikou.
-**Navázat:** „Tři fáze ze žebříku odpovídají třem stupňům školy – a třem vrstvám systému.“
-- **1. stupeň – uživatelská vrstva**: klikací rozhraní; role jako pohled (přihlásím se jako žák / učitel / ředitel – co vidím, co smím); zápis jedné známky.
-- **2. stupeň – konfigurační vrstva**: třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace („vstoupit jako…“).
-- **SŠ – vývojářská vrstva**: ER diagram, REST / MCP API, vlastní skript, nový modul, šifrování a anonymizace.
-- Spirála: tatáž známka se vrací na vyšší úrovni abstrakce – dnes na ni kliknu, za pár let ji přečtu ze svého skriptu.
-- Ke každému stupni pracovní list + metodika + klíč pro učitele (Příloha C).
+- **1. stupeň – uživatelská vrstva** (žák jako uživatel, Bloom: zapamatovat / porozumět): role jako pohled – přihlásím se jako žák / učitel / ředitel, co vidím a co smím; zápis jedné známky.
+- **2. stupeň – konfigurační vrstva** (žák jako správce, aplikovat / analyzovat): třídy, předměty, rozvrh s detekcí kolizí, AI asistent, impersonace („vstoupit jako…“).
+- **SŠ – vývojářská vrstva** (žák jako spolutvůrce, hodnotit / tvořit): ER diagram, REST / MCP API, vlastní skript, nový modul, šifrování a anonymizace.
+- Spirála: tatáž známka se vrací na vyšší úrovni abstrakce. Ke každému stupni pracovní list + klíč (Příloha C).
 
 → „A proč na to stačí jeden nástroj.“
 
-## 6 · Jeden nástroj pro všechny fáze učení (30 s · 4:00–4:30)
+## 5 · Jeden nástroj pro všechny fáze učení (30 s · 3:45–4:15)
 **Kam mířím:** Porovnání výukových nástrojů. Pointa: jeden nástroj = nižší zátěž, více času na obsah.
 **Navázat:** „Když se podívám, co se žák naučí o informačním systému v jiných nástrojích…“
 - **Drag-and-drop programování** (Scratch, Umíme to): algoritmus a program, ne systém – bez rolí, oprávnění a dat organizace.
@@ -65,18 +55,18 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 
 → „Aby to fungovalo, musí být dovoleno dělat chyby.“
 
-## 7 · Chyba je přirozená (60 s · 4:30–5:30)
+## 6 · Chyba je přirozená (60 s · 4:15–5:15)
 **Kam mířím:** Chyba je výhoda výuky, ne riziko – díky fiktivním datům a resetu.
-**Navázat:** „Třetí princip je práce s chybou.“
+**Navázat:** „Druhý princip je práce s chybou.“
 - Jen **fiktivní data** → žádné GDPR riziko; učitel vygeneruje školu na pár kliků (stovky záznamů).
 - Každá cvičná škola má **oddělený datový prostor** (multitenance); po hodině reset do výchozího stavu.
 - Omylem smazaný žák nebo záměrná kolize v rozvrhu = materiál k diskusi: *proč to šlo? kdo to mohl? co se ztratilo?*
 - Pilotáž: kolize v rozvrhu byla tématem diskuse, ne problémem.
 - Pointa: bez bezpečného resetu nemohu říct „zkus to rozbít“ – a právě to nejlépe odhaluje, jak systém funguje.
 
-→ „Co konkrétně v systému žák potká.“ · **Čas: jsem pod 5:45?**
+→ „Co konkrétně v systému žák potká.“ · **Čas: jsem pod 5:30?**
 
-## 8 · Role a datové domény (40 s · 5:30–6:10)
+## 7 · Role a datové domény (40 s · 5:15–5:55)
 **Kam mířím:** Shrnutí, co je uvnitř: 6 rolí, 8 domén, viditelné vazby.
 **Navázat:** „V systému je šest rolí a každá učí něco jiného.“
 - **Role**: administrátor (provoz více škol, tajné klíče) · ředitel (pohled shora) · zástupce (rozvrh, suplování, kolize) · učitel (známky, třídní kniha – odpovědnost za data) · rodič (co komu systém ukazuje) · žák (nejnižší role – co smím vidět a co ne).
@@ -85,7 +75,7 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 
 → „Rychle k tomu, jak je to postavené.“
 
-## 9 · Jak je systém postavený (35 s · 6:10–6:45)
+## 8 · Jak je systém postavený (35 s · 5:55–6:30)
 **Kam mířím:** Technický popis v jednom obrázku, moduly. Detaily až v dotazech.
 **Navázat:** „Technicky jen stručně – detaily rád v dotazech.“
 - Prohlížeč → **frontend** React + Vite (Cloudflare Pages) → **backend** NestJS REST API (RBAC guard, audit) → **SQLite**, čisté SQL (better-sqlite3).
@@ -95,7 +85,7 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 
 → „A teď to podstatné – co se stalo ve třídě.“
 
-## 10 · Ověření ve výuce (60 s · 6:45–7:45)
+## 9 · Ověření ve výuce (60 s · 6:30–7:30)
 **Kam mířím:** Čísla z pilotáže a co znamenají. Hlavní: prožitek role vede k pochopení oprávnění.
 **Navázat:** „Systém jsem ověřil v jedné hodině s deváťáky.“
 - 16 žáků 9. třídy, 1 hodina, role zástupce ředitele a učitel, 3 pracovní listy (matrika, rozvrh, AI asistent), dotazník + řízená diskuse.
@@ -106,7 +96,7 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 
 → „Čísla jsou jedna věc – druhá je, jaké to bylo.“
 
-## 11 · Zkušenost z hodiny (60 s · 7:45–8:45)
+## 10 · Zkušenost z hodiny (60 s · 7:30–8:30)
 **Kam mířím:** Subjektivní hodnocení začínajícího učitele. Strach klikat je argument pro sandbox, ne proti.
 **Navázat:** „Byla to moje první hodina s dětmi ve škole.“
 - Mentoroval jsem dospělé, roky vedl skautský oddíl; jako učitel ve škole poprvé.
@@ -117,7 +107,7 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 
 → „Shrnu.“
 
-## 12 · Závěr (45 s · 8:45–9:30)
+## 11 · Závěr (45 s · 8:30–9:15)
 **Kam mířím:** Rekapitulace, otevřený kód a doprovodný web, pointa, poděkování.
 **Navázat:** „Shrnuto: vymezil jsem kategorii, postavil prototyp a ověřil ho ve výuce.“
 - Nová kategorie: edukační IS – doménově věrný, otevřený, sandboxový, vícevrstvý.
@@ -126,9 +116,9 @@ Každá karta má stejnou strukturu: **Kam mířím** (o čem slide je), **Navá
 - Kód je **otevřený na GitHubu** (github.com/edustack-is), k systému je doprovodný web **is-edustack.org** s dokumentací pro učitele.
 - Závěrečná věta (pomalu): **„Informační systém nemusí být ve škole jen administrativní nutnost – může být pomůcka, na které si žák digitální svět sám postaví.“** „Děkuji za pozornost.“
 
-→ Pak posudky: čárky ke 4 tématům (SŠ, kurikulum, dotazník, MCP). Karta 13 a A–D.
+→ Pak posudky: čárky ke 4 tématům (SŠ, kurikulum, dotazník, MCP). Karta 12 a A–D.
 
-## 13 · Limity a reakce na posudky (záložní · po posudcích)
+## 12 · Limity a reakce na posudky (záložní · po posudcích)
 **Kam mířím:** Přiznat limity jako první. Slide ukázat jen, když to diskusi pomůže.
 **Navázat:** „Limity práce vidím čtyři – a oba posudky je pojmenovaly.“
 - **Jen 2. stupeň** → návrh: SŠ pilotáž na odborné škole (3. list: ER, API); 1. stupeň zkrácený list; přesný popis vzorku, ročníku, podmínek.
